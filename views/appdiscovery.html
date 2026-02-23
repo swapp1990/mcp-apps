@@ -411,6 +411,29 @@
 
   /* Hidden SVG defs */
   .svg-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+  /* Dark mode fallback — used when host (e.g. ChatGPT) doesn't send theme variables */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background-primary: #1e1e1e;
+      --color-background-secondary: #2a2a2a;
+      --color-text-primary: #e5e5e5;
+      --color-text-secondary: #aaa;
+      --color-text-tertiary: #888;
+      --color-text-info: #60a5fa;
+      --color-text-inverse: #fff;
+      --color-text-success: #4ade80;
+      --color-text-danger: #f87171;
+      --color-text-warning: #fbbf24;
+      --color-border-primary: #3a3a3a;
+      --color-border-info: #3b82f6;
+      --color-background-info: rgba(59,130,246,0.15);
+      --color-background-success: rgba(74,222,128,0.15);
+      --color-background-danger: rgba(248,113,113,0.15);
+      --color-background-warning: rgba(251,191,36,0.15);
+      --color-ring-info: rgba(59,130,246,0.3);
+    }
+  }
 </style>
 </head>
 <body>
