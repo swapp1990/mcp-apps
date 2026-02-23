@@ -75,11 +75,27 @@ const app = new App(
 );
 
 // --- Host theming ---
+function detectTheme(): "dark" | "light" | undefined {
+  try {
+    const t = (window as any).openai?.theme;
+    if (t === "dark" || t === "light") return t;
+  } catch { /* sandboxed */ }
+  const dt = document.documentElement.getAttribute("data-theme");
+  if (dt === "dark" || dt === "light") return dt as "dark" | "light";
+  if (window.matchMedia?.("(prefers-color-scheme: dark)").matches) return "dark";
+  return undefined;
+}
+
 function applyTheme(ctx: McpUiHostContext) {
-  if (ctx.theme) applyDocumentTheme(ctx.theme);
+  const theme = ctx.theme || detectTheme();
+  if (theme) applyDocumentTheme(theme);
   if (ctx.styles?.variables) applyHostStyleVariables(ctx.styles.variables);
   if (ctx.styles?.css?.fonts) applyHostFonts(ctx.styles.css.fonts);
 }
+
+// Apply theme early before ext-apps connects
+const earlyTheme = detectTheme();
+if (earlyTheme) applyDocumentTheme(earlyTheme);
 
 app.onhostcontextchanged = (ctx) => {
   applyTheme(ctx);

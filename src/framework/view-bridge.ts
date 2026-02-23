@@ -49,8 +49,30 @@ export function escAttr(str: string): string {
   return esc(str);
 }
 
+/** Detect theme from all available sources */
+function detectTheme(): "dark" | "light" | undefined {
+  // 1. ChatGPT Apps SDK: window.openai.theme
+  try {
+    const oaiTheme = (window as any).openai?.theme;
+    if (oaiTheme === "dark" || oaiTheme === "light") return oaiTheme;
+  } catch { /* sandboxed */ }
+
+  // 2. Already set by ext-apps applyDocumentTheme
+  const dt = document.documentElement.getAttribute("data-theme");
+  if (dt === "dark" || dt === "light") return dt;
+
+  // 3. OS preference
+  if (window.matchMedia?.("(prefers-color-scheme: dark)").matches) return "dark";
+
+  return undefined;
+}
+
 /** Initialize the View bridge — call this at the top level of each View's .ts file */
 export async function initViewBridge(config: ViewBridgeConfig): Promise<ViewBridge> {
+  // Apply theme immediately before ext-apps connects (prevents flash of wrong theme)
+  const earlyTheme = detectTheme();
+  if (earlyTheme) applyDocumentTheme(earlyTheme);
+
   const app = new App(
     { name: config.name, version: config.version },
     {},
@@ -58,7 +80,9 @@ export async function initViewBridge(config: ViewBridgeConfig): Promise<ViewBrid
   );
 
   function applyTheme(ctx: McpUiHostContext) {
-    if (ctx.theme) applyDocumentTheme(ctx.theme);
+    // Use host theme if provided, otherwise detect from environment
+    const theme = ctx.theme || detectTheme();
+    if (theme) applyDocumentTheme(theme);
     if (ctx.styles?.variables) applyHostStyleVariables(ctx.styles.variables);
     if (ctx.styles?.css?.fonts) applyHostFonts(ctx.styles.css.fonts);
   }
