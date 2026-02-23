@@ -72,6 +72,14 @@ export async function initViewBridge(config: ViewBridgeConfig): Promise<ViewBrid
   }
 
   app.ontoolresult = (result) => {
+    // Check structuredContent first (ChatGPT-compatible format)
+    const sc = (result as any).structuredContent;
+    if (sc && typeof sc === "object" && sc[config.envelopeKey]) {
+      config.onEnvelope(sc);
+      return;
+    }
+
+    // Fall back to scanning content blocks (legacy format)
     const content = result.content || [];
 
     for (const block of content) {
