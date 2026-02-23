@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // Unified MCP Apps HTTP server
-// Serves all apps from a single endpoint
+// Each app gets its own endpoint: /<appname>/mcp
 
 import { startHttpServer } from "./framework/server.js";
 import { dirname, join } from "path";
@@ -22,6 +22,7 @@ startHttpServer({
     appdiscovery: "appdiscovery.html",
     regex: "regex.html",
   },
+  baseUrl: process.env.BASE_URL || `http://localhost:${PORT}`,
 }).catch((error) => {
   console.error("Fatal error:", error);
   process.exit(1);
