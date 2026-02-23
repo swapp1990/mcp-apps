@@ -1,0 +1,1047 @@
+{
+  "version": "1.0",
+  "lastModified": "2026-02-22T02:31:46.778Z",
+  "apps": [
+    {
+      "id": "vacation-photos",
+      "name": "Vacation Photos",
+      "platform": "ios",
+      "category": "Photography",
+      "price": 0,
+      "currency": "USD",
+      "rating": 5,
+      "reviewCount": 1,
+      "shortDescription": "Automatically finds and organizes your vacation photos by scanning your library for pictures taken 50+ miles from home. Perfect for travelers who want to relive trips without manual sorting.",
+      "fullDescription": "Vacation Photos scans your photo library and groups pictures taken 50+ miles from home into trips, making it effortless to relive your travel memories. Share entire vacations with a simple link -- recipients do not need the app installed to view shared albums. Designed for travelers who take hundreds of photos but never get around to organizing them.",
+      "features": [
+        "Automatic trip detection based on distance from home",
+        "Smart grouping of photos into vacation albums",
+        "Shareable vacation links (no app required to view)",
+        "Privacy-first: all scanning happens on-device",
+        "Clean, minimal interface focused on your photos",
+        "Works with your existing iOS photo library"
+      ],
+      "pros": [
+        "Zero-effort organization -- just install and it works",
+        "Sharing is dead simple with web links",
+        "No account or signup required",
+        "Completely free with no ads"
+      ],
+      "cons": [
+        "New app with limited reviews so far",
+        "Relies on photo location data being available",
+        "No Android version available"
+      ],
+      "developer": "Swapnil Sawant",
+      "appStoreUrl": "https://apps.apple.com/us/app/vacation-photos/id6756803475?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e5/d7/34/e5d734aa-a085-408d-58cc-92a627701ce7/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-01-28T15:02:20Z",
+      "addedAt": "2026-02-22T02:31:23.739Z"
+    },
+    {
+      "id": "vsco-photo-editor-presets",
+      "name": "VSCO: Photo Editor & Presets",
+      "platform": "ios",
+      "category": "Photography",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 272031,
+      "shortDescription": "A community-driven photo and video editor with film-inspired presets and professional editing tools. Best for creators who value aesthetic consistency and want to connect with other photographers.",
+      "fullDescription": "VSCO combines a powerful photo and video editor with a creative community platform. It offers 200+ presets inspired by classic film stocks from Kodak, Fuji, and Agfa, along with advanced tools like HSL, Dodge & Burn, and Split Tone. Free users get access to a solid set of presets and basic editing tools, while the VSCO Membership unlocks the full preset library, video editing, and Montage (video collage). The community aspect sets it apart from pure editing apps -- you can share work, discover photographers, and build a portfolio.",
+      "features": [
+        "200+ film-inspired presets (Kodak, Fuji, Agfa emulations)",
+        "RAW photo import and editing",
+        "Advanced tools: HSL, Curves, Split Tone, Dodge & Burn",
+        "Video editing with presets and trim tools",
+        "Recipes to save and reapply your favorite edits",
+        "Built-in creative community and photo sharing",
+        "Montage for creating video collages",
+        "Desktop editing via VSCO Hub"
+      ],
+      "pros": [
+        "Best-in-class film emulation presets",
+        "Community is curated and ad-free, unlike Instagram",
+        "Recipes feature saves huge time on batch editing",
+        "Free tier is genuinely useful"
+      ],
+      "cons": [
+        "Full preset library requires paid membership ($29.99/yr)",
+        "Social features may feel unnecessary for editing-only users",
+        "No layer-based editing or advanced retouching"
+      ],
+      "developer": "Visual Supply Company",
+      "appStoreUrl": "https://apps.apple.com/us/app/vsco-photo-editor-presets/id588013838?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/df/23/04df2329-1190-8222-4582-b7ab355ab589/app-icon-production-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-12T21:13:13Z",
+      "addedAt": "2026-02-22T02:31:28.969Z"
+    },
+    {
+      "id": "lightroom-ai-photo-editor",
+      "name": "Lightroom: AI Photo Editor",
+      "platform": "ios",
+      "category": "Photography",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 333509,
+      "shortDescription": "Adobe's professional-grade photo editor for mobile, with AI-powered enhancements, RAW support, and cloud sync. Ideal for photographers who want desktop-quality editing on iPhone.",
+      "fullDescription": "Adobe Lightroom brings professional photo editing to your pocket with AI-powered tools that make complex adjustments simple. The free tier includes basic editing tools, presets, and camera controls. A Creative Cloud subscription unlocks cloud storage, Adaptive Presets, Healing Brush, Selective Adjustments, and RAW editing. Lightroom excels at non-destructive editing with full adjustment history, and photos sync seamlessly across mobile, desktop, and web.",
+      "features": [
+        "AI-powered Adaptive Presets and Auto adjustments",
+        "Full RAW file support with professional color grading",
+        "Selective edits with AI masking (sky, subject, background)",
+        "Healing Brush for removing unwanted objects",
+        "Cloud sync across all devices (phone, tablet, desktop, web)",
+        "Built-in camera with HDR and RAW capture",
+        "Batch editing and preset creation",
+        "Integration with Photoshop and other Adobe apps"
+      ],
+      "pros": [
+        "Industry-standard editing tools on mobile",
+        "Cloud sync means edits are always accessible everywhere",
+        "AI masking is remarkably accurate for selective edits",
+        "Free tier is generous for casual users"
+      ],
+      "cons": [
+        "Full features require Adobe Creative Cloud subscription ($9.99/mo+)",
+        "Cloud storage can fill up quickly with RAW files",
+        "Can feel slow on older devices with large photo libraries"
+      ],
+      "developer": "Adobe Inc.",
+      "appStoreUrl": "https://apps.apple.com/us/app/lightroom-ai-photo-editor/id878783582?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/99/01/c0/9901c058-d2f4-674b-4bde-5b9b51e56591/AppIcon-0-1x_U007ephone-0-1-0-0-85-220-0.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-19T19:31:23Z",
+      "addedAt": "2026-02-22T02:31:30.992Z"
+    },
+    {
+      "id": "snapseed-photo-editor",
+      "name": "Snapseed: Photo Editor",
+      "platform": "ios",
+      "category": "Photography",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.9,
+      "reviewCount": 7008,
+      "shortDescription": "Google's completely free photo editor with 25+ professional tools and filters, no ads or subscriptions. The go-to choice for powerful mobile editing without spending a cent.",
+      "fullDescription": "Snapseed is a complete, professional-grade photo editor developed by Google. Unlike most editing apps, it is entirely free with no ads, no watermarks, and no subscription upsells. It offers 25+ tools and filters including Healing, HDR, Perspective correction, Curves, and selective adjustments. Snapseed supports both JPG and RAW files, lets you save personal editing looks for reuse, and provides fine-grained control over every adjustment. The selective filter brush lets you apply effects to specific areas of your photos with precision.",
+      "features": [
+        "25+ tools: Healing, HDR, Perspective, Curves, White Balance, Brush",
+        "RAW file editing with non-destructive saves",
+        "Selective filter brush for targeted adjustments",
+        "Save and reapply personal editing looks",
+        "Double Exposure for blending two photos",
+        "Expand tool to extend image canvas with AI fill",
+        "Completely free -- no ads, no subscriptions, no watermarks"
+      ],
+      "pros": [
+        "100% free with no hidden costs or limitations",
+        "Surprisingly powerful for a mobile editor",
+        "Selective editing brush rivals desktop tools",
+        "Lightweight and fast, works great on older devices"
+      ],
+      "cons": [
+        "Interface can feel dated compared to newer editors",
+        "No video editing capabilities",
+        "Google has not updated it as frequently in recent years"
+      ],
+      "developer": "Google",
+      "appStoreUrl": "https://apps.apple.com/us/app/snapseed-photo-editor/id439438619?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/39/93/37/399337b2-11cf-3f47-c1fe-7bfad6d6afa5/DefaultIcon-0-1x_U007epad-0-0-0-1-0-0-0-85-220-0.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-19T22:46:31Z",
+      "addedAt": "2026-02-22T02:31:29.973Z"
+    },
+    {
+      "id": "darkroom-photo-video-editor",
+      "name": "Darkroom: Photo & Video Editor",
+      "platform": "ios",
+      "category": "Photography",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 28933,
+      "shortDescription": "Apple Design Award-winning photo and video editor with batch editing, 8K video grading, and AI-powered masks. Built specifically for iPhone and iPad by a team that prioritizes native Apple design.",
+      "fullDescription": "Darkroom is a highly acclaimed photo and video editor designed exclusively for Apple devices. Winner of the Apple Design Award in 2020 and an Editor's Choice since 2018, it delivers desktop-quality editing tools optimized for touch. Key strengths include AI-powered depth-based editing, batch photo processing, professional 8K video color grading, and a comprehensive set of filters and adjustment tools. Darkroom integrates directly with your Photos library so there is no need to import or export -- you edit in place. It supports RAW files, offers hashtag sets for social sharing, and includes tools for creating and selling your own preset packs.",
+      "features": [
+        "AI-powered masks for sky, subject, and background selection",
+        "Batch photo editing -- apply edits across multiple photos at once",
+        "8K video color grading and editing",
+        "Direct integration with iOS Photos library (no import needed)",
+        "RAW and ProRAW file support",
+        "Customizable filters and ability to create/sell preset packs",
+        "Professional tools: Curves, HSL, Color Grading, Grain",
+        "Hashtag manager for streamlined social media posting"
+      ],
+      "pros": [
+        "Best-in-class Apple ecosystem integration",
+        "Batch editing saves enormous time for high-volume shooters",
+        "Gorgeous UI that feels native to iOS",
+        "Video and photo editing in one app"
+      ],
+      "cons": [
+        "Premium features require subscription ($49.99/yr or $3.99/mo)",
+        "No Android or Windows version",
+        "Advanced features have a learning curve for beginners"
+      ],
+      "developer": "Bergen Co.",
+      "appStoreUrl": "https://apps.apple.com/us/app/darkroom-photo-video-editor/id953286746?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/d8/f2/35d8f2d0-fc33-13fa-a104-5e635806e9ac/AppIcon-0-0-1x_U007epad-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e4/7b/bc/e47bbcef-41ba-7fa0-4c6f-72efbd1be995/860502cb-b72a-474e-b89c-bcec75b94d34_55-1-masks.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9f/7d/4c/9f7d4c2f-bade-194a-eb3e-7ce1c60a0496/5ea2eb45-1299-46ee-875a-0746c380cb3f_55-2-sell.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/24/61/08/246108f9-1efe-3b43-59e9-6fabd260e122/9b66e9ba-536c-4b30-bc2e-5afa6288b487_55-3-presets.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3d/b4/e0/3db4e046-c41d-5bbd-4c3c-f4e6120cc1e7/8fe53768-1bf0-4553-9c40-b0362e59088e_55-4-grade.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/20/a3/c5/20a3c5b2-d61b-6187-97d0-aa38347b3aad/241318c3-c766-44c0-b3a0-12d312f8904b_55-5-frame.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/85/a8/51/85a85115-2b15-893b-2c50-327248c20758/68fdf098-026b-433c-b508-76c786090b39_55-6-batch.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/15/a7/b715a7a9-f56a-294b-8b92-c5642e4d223c/3e0f5c14-ab4e-492a-a09b-631e484615bc_55-7-raw.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4c/d8/20/4cd820d9-9b5c-5c8b-6752-573763186683/588690f7-95a9-4f9c-a358-bce10aa29bd7_55-8-transform.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c4/b6/f8/c4b6f899-9679-b214-f255-4e2a9bfa5e0c/4f72f74c-2bf2-40d5-ba4b-af4ffd16be6a_55-9-devices.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b4/10/3b/b4103bde-d04b-4ea2-2ea1-408543e2617f/f487c300-47ca-406b-ba39-90cb1f4cbc7c_55-10-reviews.jpg/392x696bb.jpg"
+      ],
+      "lastUpdated": "2026-02-13T05:36:45Z",
+      "addedAt": "2026-02-22T02:31:30.391Z"
+    },
+    {
+      "id": "halide-mark-ii-pro-camera",
+      "name": "Halide Mark II - Pro Camera",
+      "platform": "ios",
+      "category": "Photography",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 12797,
+      "shortDescription": "Apple Design Award-winning manual camera app with an intuitive gesture-based interface. Built for photographers who want full control over exposure, focus, and RAW capture on iPhone.",
+      "fullDescription": "Halide is a premium manual camera app that replaces the default iPhone camera for photographers who want deliberate, thoughtful control over their shots. It features gesture-based controls for exposure and focus, supports RAW and ProRAW capture, and includes Neural Macro mode that brings macro photography to any iPhone model. The app includes 10 days of built-in photography lessons, making it accessible to beginners while offering depth for pros. Halide is not free -- it offers a 7-day trial with annual membership, or a one-time purchase option.",
+      "features": [
+        "Gesture-based manual controls for exposure and focus",
+        "RAW and Apple ProRAW capture support",
+        "Neural Macro mode for macro photography on any iPhone",
+        "Professional depth capture and depth editing",
+        "Built-in 10-day photography course for beginners",
+        "Focus peaking and zebra stripe exposure indicators",
+        "Instant RAW processing with adjustable parameters",
+        "Metal-powered live histogram and waveform"
+      ],
+      "pros": [
+        "Most elegant manual camera interface on iOS",
+        "Neural Macro works impressively well on non-Pro iPhones",
+        "One-time purchase option for those who dislike subscriptions",
+        "Built-in lessons make it approachable for beginners"
+      ],
+      "cons": [
+        "Requires paid subscription or one-time purchase ($29.99)",
+        "Focused purely on capture -- no built-in photo editor",
+        "Some features duplicate capabilities in newer iOS camera app"
+      ],
+      "developer": "Lux Optics Incorporated",
+      "appStoreUrl": "https://apps.apple.com/us/app/halide-mark-ii-pro-camera/id885697368?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8e/9f/7b/8e9f7b42-b967-c093-123b-c9873874c575/AppIcon3-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/38/d6/06/38d606bb-e8e2-d871-2ffc-29702890d47c/5ffe57d2-d636-4b17-bbdb-bc4be089574c_55_App_Store_Screen_1.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ad/19/f8/ad19f80f-6792-a27c-b873-dfe3be8bd678/786972e1-d2b2-4411-b7f6-9f8591e595f6_Untitled-2.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9c/e9/e1/9ce9e154-e552-5931-5eed-1f22b541f2d0/113a60cb-733d-499d-a4a3-718ec45d2f23_55_App_Store_Screen_8.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/80/48/33804878-b86b-528e-cf13-0a525f2ccbb4/8c05f609-feba-4c0e-9a84-4eb7559caee9_55_App_Store_Screen_3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9d/8a/9e/9d8a9e1a-97e6-dbe4-15f2-5a3a171e1004/85c2b261-8d55-41c8-ae9b-597cb9e00ed1_55_App_Store_Screen_4.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/9e/15/7e/9e157eec-be43-db54-b95a-6b6c41a4ae52/50d64d06-b68a-43eb-a496-0ebd960929f9_55_App_Store_Screen_5.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/67/09/67/6709672a-75f7-3e0d-3e15-8a43c709da2b/154bbd5e-fc64-4a15-a7b8-e77eff04fc02_55_App_Store_Screen_6.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7b/54/24/7b542454-0b01-b926-8141-2e1e3e38ff9f/2e7682c9-5e41-4548-9212-cd7d2812beae_55_App_Store_Screen_7.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/62/b5/8b/62b58b3a-ce3b-496d-bb4e-85f427faa962/06c8895b-8ec2-4d15-be4a-6791d6f36e6b_55_App_Store_Screen_9.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/64/ff/b864fff8-a135-7701-f098-5a73baedde34/3b5954c7-5cd7-4a58-902d-85b5756f8b1b_55_App_Store_Screen_10_copy.png/392x696bb.png"
+      ],
+      "lastUpdated": "2026-02-10T13:16:12Z",
+      "addedAt": "2026-02-22T02:31:30.990Z"
+    },
+    {
+      "id": "photomator-photo-editor",
+      "name": "Photomator - Photo Editor",
+      "platform": "ios",
+      "category": "Photography",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviewCount": 3464,
+      "shortDescription": "A powerful, Apple-native photo editor with AI-powered object removal, super resolution upscaling, and support for 750+ RAW formats. Ideal for Apple ecosystem users who want pro editing without Adobe.",
+      "fullDescription": "Photomator (from the makers of Pixelmator) is a professional photo editor designed to feel native on iPhone, iPad, and Mac. It offers an extensive set of non-destructive color adjustments, AI-powered subject/sky/background selection, object removal via an intelligent Repair tool, and AI-based super resolution for upscaling photos. With support for over 750 RAW formats and seamless Photos library integration, it is a strong alternative to Adobe Lightroom for users who prefer a one-time purchase over subscriptions. The Crop tool, Denoise feature, and batch editing via Automator workflows round out a comprehensive editing toolkit.",
+      "features": [
+        "AI-powered automatic selections (subject, sky, background)",
+        "Intelligent Repair tool for removing unwanted objects",
+        "AI Super Resolution for upscaling photo resolution",
+        "Support for 750+ RAW image formats including ProRAW",
+        "Non-destructive editing with full adjustment history",
+        "Denoise tool for reducing camera noise and compression artifacts",
+        "Direct Photos library integration (no import/export needed)",
+        "Automator workflows for batch processing on Mac"
+      ],
+      "pros": [
+        "One-time purchase option -- no subscription required",
+        "Feels truly native on Apple devices",
+        "AI Super Resolution is genuinely impressive",
+        "750+ RAW format support covers virtually any camera"
+      ],
+      "cons": [
+        "No Android or Windows version",
+        "Less community and preset ecosystem than Lightroom",
+        "AI features require reasonably modern hardware"
+      ],
+      "developer": "Apple",
+      "appStoreUrl": "https://apps.apple.com/us/app/photomator-photo-editor/id1444636541?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cb/11/8f/cb118ff6-8a7f-8e7f-878c-834b40e88c57/AppIcon-0-0-1x_U007epad-0-0-0-11-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/11/cd/43/11cd432c-9665-ea6d-20ad-017ddba078e9/74ef5722-39ac-4c38-85e1-114ae3d1722b_5_U002c5_2.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/13/3e/86/133e8613-62cb-550a-6825-ac890527eeb9/cdbd7779-849d-498a-a540-dc86927b77a9_5_U002c5_copy.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/52/f1/d9/52f1d949-43fc-1c17-3d8c-8966c5997034/18bb4aaa-73d1-4c97-821f-47c446342a7d_5_U002c5.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/47/bb/b3/47bbb305-5338-16bc-1e77-4583c385d44e/70d3274b-ff16-44bf-83c2-227001e29669_5_U002c5.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3b/4e/d6/3b4ed6fc-39ee-392a-fb8e-ec9dd2b40e2c/aaabbb6f-c7f0-4f1b-99ff-9b0eb4a6b815_5_U002c5_3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b1/4e/69/b14e6933-806b-a6ae-be4e-1d87847f5977/9ae4baf0-84e2-4ff8-af27-3e3a3919d9be_Workflows.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/65/d1/82/65d182d7-741d-fd46-4a93-58e0eb1c183d/97aa37e5-20f9-45b4-9180-8e8b386f933e_Presets.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d6/e8/8c/d6e88c0e-5ce5-b38c-62d3-bdcdd4a0c4e9/6f9d0117-bc01-4df6-96dc-c18ca1c5736c_RAW.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5b/9a/a3/5b9aa31e-ce93-27f7-a9b2-786dee6ae0d1/965dbf72-78f3-4325-855a-774176ddfd5e_Crop.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c0/4c/14/c04c145c-5aaf-e621-6222-5a74689035c7/c208d809-906c-4010-a6d5-7ad7ea5257cf_5_U002c5_2.png/392x696bb.png"
+      ],
+      "lastUpdated": "2026-01-28T14:06:21Z",
+      "addedAt": "2026-02-22T02:31:30.393Z"
+    },
+    {
+      "id": "notion-notes-tasks-ai",
+      "name": "Notion: Notes, Tasks, AI",
+      "platform": "ios",
+      "category": "Productivity",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 77940,
+      "shortDescription": "An AI-powered all-in-one workspace for notes, tasks, wikis, and databases. Best for individuals and teams who want to consolidate their tools into a single customizable platform.",
+      "fullDescription": "Notion is a highly flexible workspace that combines notes, tasks, databases, wikis, and AI assistance into one platform. It replaces multiple tools by letting you build custom systems for project management, note-taking, knowledge bases, and more using a block-based editor. Notion AI can summarize documents, generate content, answer questions about your workspace, and take AI meeting notes. The free plan is generous for personal use, while team plans add collaboration features. Available on iOS, Android, Mac, Windows, and web.",
+      "features": [
+        "Block-based editor for notes, docs, databases, and wikis",
+        "Notion AI for summarization, writing, and Q&A about your content",
+        "AI Meeting Notes with automatic transcription and summaries",
+        "Databases with multiple views: table, board, timeline, calendar, gallery, map",
+        "Templates gallery with thousands of pre-built systems",
+        "Real-time collaboration with comments and mentions",
+        "API and integrations ecosystem for automation",
+        "Offline mode for working without internet"
+      ],
+      "pros": [
+        "Incredibly flexible -- can replace 5+ separate apps",
+        "AI features are well-integrated and context-aware",
+        "Free personal plan is generous and fully functional",
+        "Massive template ecosystem to get started quickly"
+      ],
+      "cons": [
+        "Steep learning curve due to extreme flexibility",
+        "Mobile app can feel slower than native alternatives",
+        "Search can be unreliable in large workspaces"
+      ],
+      "developer": "Notion Labs, Incorporated",
+      "appStoreUrl": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/30/6d/1c/306d1c9d-093a-45b6-187a-af8f8a4f56de/AppIconProd-0-0-1x_U007epad-0-0-0-1-0-0-P3-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-19T16:32:18Z",
+      "addedAt": "2026-02-22T02:31:35.984Z"
+    },
+    {
+      "id": "todoist-to-do-list-calendar",
+      "name": "Todoist: To Do List & Calendar",
+      "platform": "ios",
+      "category": "Productivity",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 123638,
+      "shortDescription": "A clean, cross-platform task manager trusted by 50 million+ people. Ideal for anyone who needs to organize personal and work tasks without fighting their productivity tools.",
+      "fullDescription": "Todoist is a task manager that bridges personal and professional productivity without unnecessary complexity. It uses natural language input so you can type things like 'Submit report every Friday at 4pm #Work' and Todoist structures it automatically. The app supports projects, labels, filters, priorities, and recurring tasks, all synced across every platform. The free tier handles most individual needs, while Pro adds reminders, calendar views, and task duration. Business plans add team features. Available on iOS, Android, Mac, Windows, Web, and every major browser.",
+      "features": [
+        "Natural language task input with smart date parsing",
+        "Voice-to-task: describe tasks verbally and Todoist structures them",
+        "Projects, sections, labels, and priority levels for organization",
+        "Recurring tasks with flexible scheduling options",
+        "Karma system and productivity trends for motivation",
+        "Calendar view and integration with Google Calendar",
+        "Cross-platform sync (iOS, Android, Mac, Windows, Web, browser extensions)",
+        "Filters and custom views to focus on what matters"
+      ],
+      "pros": [
+        "Best-in-class natural language input for quick task capture",
+        "Available everywhere -- truly cross-platform",
+        "Clean, focused interface that stays out of your way",
+        "Free tier is generous enough for most personal use"
+      ],
+      "cons": [
+        "Reminders require Pro plan ($4/mo)",
+        "No built-in note-taking beyond task comments",
+        "Less powerful for complex project management vs. dedicated PM tools"
+      ],
+      "developer": "Doist Inc.",
+      "appStoreUrl": "https://apps.apple.com/us/app/todoist-to-do-list-calendar/id572688855?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cf/74/ac/cf74acf4-4252-f0d3-2b27-44cf6172983a/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-19T14:16:17Z",
+      "addedAt": "2026-02-22T02:31:36.440Z"
+    },
+    {
+      "id": "things-3",
+      "name": "Things 3",
+      "platform": "ios",
+      "category": "Productivity",
+      "price": 9.99,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 27338,
+      "shortDescription": "Award-winning task manager with an elegant, distraction-free design. Best for Apple users who value beautiful software and want GTD-style organization without complexity.",
+      "fullDescription": "Things 3 is a premium task manager built exclusively for Apple platforms (iPhone, iPad, Mac, Apple Watch) that helps you plan your day, manage projects, and track goals. It follows a loosely GTD-inspired structure with Inbox, Today, Upcoming, Anytime, and Someday lists, plus Projects with headings for organizing larger goals. The design is widely praised as one of the most beautiful productivity apps ever made, with interactions that feel delightful rather than tedious. Things uses iCloud sync, supports Shortcuts automation, and offers deep calendar integration. It is a one-time purchase with no subscription.",
+      "features": [
+        "Today view for daily planning with evening review",
+        "Projects with headings and progress indicators",
+        "Tags, deadlines, and checklists within to-dos",
+        "Quick Find for instantly searching everything",
+        "Calendar integration showing events alongside tasks",
+        "Shortcuts and automation support",
+        "iCloud sync across iPhone, iPad, Mac, and Apple Watch",
+        "Magic Plus button for quick task entry from any view"
+      ],
+      "pros": [
+        "Exceptionally beautiful and intuitive design",
+        "One-time purchase -- no subscription ever",
+        "Fast and reliable iCloud sync",
+        "Encourages daily planning without being overwhelming"
+      ],
+      "cons": [
+        "Apple-only -- no Android or Windows version",
+        "No collaboration or sharing features",
+        "Separate purchases required for iPhone ($9.99), iPad ($19.99), and Mac ($49.99)"
+      ],
+      "developer": "Cultured Code GmbH & Co. KG",
+      "appStoreUrl": "https://apps.apple.com/us/app/things-3/id904237743?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/6b/5f/416b5f51-806c-c62c-f6f3-a4b720c37b62/AppIcon-0-0-1x_U007ephone-0-0-0-1-0-0-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-18T14:24:36Z",
+      "addedAt": "2026-02-22T02:31:36.812Z"
+    },
+    {
+      "id": "bear-markdown-notes",
+      "name": "Bear - Markdown Notes",
+      "platform": "ios",
+      "category": "Productivity",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 6789,
+      "shortDescription": "A beautiful Markdown note-taking app with tag-based organization, encryption, and Apple Pencil sketching. Perfect for writers and note-takers who want simplicity without sacrificing power.",
+      "fullDescription": "Bear is a writing-focused note app that uses Markdown for formatting while keeping the experience approachable for non-technical users. Notes are organized with hashtags rather than folders, making cross-referencing and discovery natural. Bear supports inline images, files, tables, code blocks, and sketching with Apple Pencil on iPad. It includes note linking for building personal knowledge bases, end-to-end encryption for sensitive notes, and export to multiple formats (PDF, HTML, Markdown, DOCX). The free version includes all editing features with iCloud sync requiring a Bear Pro subscription.",
+      "features": [
+        "Tag-based organization with nested tags",
+        "Markdown formatting with live preview",
+        "Note linking and backlinks for connected thinking",
+        "Apple Pencil sketching on iPad with extendable canvas",
+        "End-to-end encryption for sensitive notes",
+        "Export to PDF, HTML, Markdown, DOCX, and JPG",
+        "Themes for customizing the writing environment",
+        "Web clipper browser extension for saving content"
+      ],
+      "pros": [
+        "Writing experience is fast, fluid, and distraction-free",
+        "Tag system is more flexible than rigid folder structures",
+        "Beautiful design that won an Apple Design Award",
+        "Lightweight compared to heavier tools like Notion"
+      ],
+      "cons": [
+        "iCloud sync and export require Pro subscription ($2.99/mo)",
+        "Apple-only -- no Android or Windows apps",
+        "No real-time collaboration features"
+      ],
+      "developer": "Shiny Frog Ltd.",
+      "appStoreUrl": "https://apps.apple.com/us/app/bear-markdown-notes/id1016366447?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7c/29/a3/7c29a331-7ced-9cbb-0518-8ebea3f90a70/AppIcon-26-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5c/b7/78/5cb778f4-823d-820d-4bc0-84f9d3096331/c0a077c6-cb01-40cb-a973-ec02275a3bd5_Markdown_-_iPhone_5.5_U0022.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/78/62/f0/7862f0ef-aab0-40de-39b7-ec95d9d5768d/98b97233-91b1-404f-a12e-1ca4bb735a3f_Tags_-_iPhone_5.5_U0022@3x.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d3/86/68/d3866803-f326-6e3a-5343-adc6c18d9251/b44d8bf1-74ee-4dc9-acf1-f52864134f47_Sync_-_iPhone_5.5_U0022@3x.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ef/ab/67/efab67ee-b65d-1905-47ca-cfa43de583fd/bdeee101-a659-43ce-8a14-0cf8ff6ab26c_Themes_-_iPhone_5.5_U0022@3x.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/af/4b/b4/af4bb432-7672-fc27-b1b6-3c005c7e32b3/a44f297e-3332-44c2-a705-daa73c831066_Info_Panel_-_iPhone_5.5_U0022@3x.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6e/54/0f/6e540f4f-19e7-3976-09de-bcffe9da0872/d5226cf0-c92d-456d-9762-0bc9b2109ef2_Sketch_-_iPhone_5.5_U0022@3x.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/68/b4/7b68b473-0d7e-ca0c-db90-be9f5d67c10f/fcfc0f79-ea37-47b4-b1c3-9c94d5e93af3_Search_-_iPhone_5.5_U0022@3x.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/83/cf/97/83cf978c-786d-391b-fb13-ce799480046e/5970f88b-617d-453f-9c23-05fe06b2892c_Encryption_-_iPhone_5.5_U0022@3x.png/392x696bb.png"
+      ],
+      "lastUpdated": "2026-02-17T08:29:31Z",
+      "addedAt": "2026-02-22T02:31:37.007Z"
+    },
+    {
+      "id": "google-tasks-get-things-done",
+      "name": "Google Tasks: Get Things Done",
+      "platform": "ios",
+      "category": "Productivity",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 100935,
+      "shortDescription": "A simple, free task manager that syncs with Gmail and Google Calendar. Best for Google Workspace users who want lightweight to-do tracking without learning a new system.",
+      "fullDescription": "Google Tasks is a streamlined task management app that integrates tightly with Gmail and Google Calendar. You can create tasks directly from emails, set due dates that appear on your calendar, and organize work with lists and subtasks. The app syncs across all devices and is completely free with no premium tier. It lacks the advanced features of dedicated task managers but excels at being simple, fast, and always accessible wherever you use Google products.",
+      "features": [
+        "Create tasks directly from Gmail emails",
+        "Due dates sync automatically with Google Calendar",
+        "Subtasks for breaking down complex work",
+        "Multiple task lists for organizing different areas",
+        "Drag-and-drop reordering and prioritization",
+        "Cross-device sync through Google account",
+        "Task details and notes for additional context",
+        "Starred tasks for quick access to priorities"
+      ],
+      "pros": [
+        "Completely free with no limitations or premium tier",
+        "Seamless integration with Gmail and Google Calendar",
+        "Extremely simple to learn and use",
+        "Works everywhere you have a Google account"
+      ],
+      "cons": [
+        "Very basic -- no labels, priorities, or recurring tasks with complex schedules",
+        "No collaboration or task sharing features",
+        "Limited to the Google ecosystem for integrations"
+      ],
+      "developer": "Google",
+      "appStoreUrl": "https://apps.apple.com/us/app/google-tasks-get-things-done/id1353634006?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/6f/1f/a96f1f90-7520-f575-4262-3760af66233f/tasks-0-1x_U007epad-0-0-0-1-0-0-0-85-220-0.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/5c/f7/0f/5cf70f4e-4df4-e247-9f86-8c1d34b94fc6/ed38eac0-6bc7-4906-8364-c11cfc69e0ef_0_APP_IPHONE_55_0.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/a6/a2/48/a6a248fe-d6b5-d842-9d71-a47b963aa16c/1d3d1baf-0119-444b-9022-b8cc68d874fe_1_APP_IPHONE_55_1.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/46/55/e4/4655e452-c3ae-342e-5ccd-eb4424da791e/df9746ad-0c3b-4c6e-8802-065737f261bc_2_APP_IPHONE_55_2.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/b8/e4/ce/b8e4ce36-0693-3b77-55ea-5e333118a2f0/0a8e552e-32ec-4b11-8b57-dee39dbcf959_3_APP_IPHONE_55_3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/28/ef/fd/28effdf2-658c-2818-006a-79d00295dae3/8b5568f0-c86f-4925-b810-32fcdae07dcf_4_APP_IPHONE_55_4.png/392x696bb.png"
+      ],
+      "lastUpdated": "2026-02-20T08:44:38Z",
+      "addedAt": "2026-02-22T02:31:36.813Z"
+    },
+    {
+      "id": "evernote-notes-organizer",
+      "name": "Evernote - Notes Organizer",
+      "platform": "ios",
+      "category": "Productivity",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.4,
+      "reviewCount": 73954,
+      "shortDescription": "A veteran note-taking app with powerful web clipping, document scanning, and search across handwritten notes. Best for users who capture information from many sources and need it all searchable.",
+      "fullDescription": "Evernote is a long-established note-taking and organization app designed to be the place you put everything. It excels at capturing diverse content types -- text notes, web clippings, scanned documents, PDFs, photos, and audio -- and making all of it searchable, including text within images and handwritten notes. The app syncs across all devices and offers notebooks, tags, and a customizable Home dashboard. Tasks integration lets you manage to-dos alongside notes, and Google Calendar integration keeps your schedule visible. While newer competitors have emerged, Evernote remains strong for users who need robust web clipping and cross-format search.",
+      "features": [
+        "Web Clipper for saving articles, pages, and selections",
+        "Document scanner with OCR for searchable scans",
+        "Search inside images, PDFs, and handwritten notes",
+        "Tasks with due dates, flags, and reminders",
+        "Google Calendar integration in Home dashboard",
+        "Notebooks, tags, and saved searches for organization",
+        "Templates for meeting notes, project plans, and more",
+        "Cross-platform sync (iOS, Android, Mac, Windows, Web)"
+      ],
+      "pros": [
+        "Best-in-class web clipper for saving internet content",
+        "OCR search across handwriting and images is powerful",
+        "Handles mixed content types (text, images, PDFs, audio) well",
+        "Long track record with mature, stable platform"
+      ],
+      "cons": [
+        "Free plan is now limited to 50 notes and 1 notebook",
+        "UI feels dated compared to modern alternatives like Notion",
+        "Performance has had reliability issues in recent years"
+      ],
+      "developer": "Evernote Corporation",
+      "appStoreUrl": "https://apps.apple.com/us/app/evernote-notes-organizer/id281796108?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b5/30/14/b5301429-84f4-329b-e4e1-c9f57684c002/AppIcon-0-0-1x_U007epad-0-0-0-1-0-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/19/80/d2/1980d27e-17f6-271e-c0ec-8fda94069892/91b024a2-0f1e-4ba3-ac34-e6b75987c73b_1_Hero_iPhone_5.5_inch.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/00/1e/be/001ebe95-5aa6-f3bc-ef8c-66d24ffa4ae0/3b02e980-df04-4185-8510-e6ec5d20393b_src.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9d/4f/38/9d4f3874-e9db-2cc1-abd6-ed800ed4df8d/71d1aaec-7747-43f0-915d-6867c350ac8c_4_Search_iPhone_5.5_inch.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/62/56/6b62561b-6784-e787-893a-c69e58c968a2/77b89bc4-05d4-4216-896a-b7dd779f31f6_src.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0f/0d/ce/0f0dce16-bdf0-4841-0708-8b5d2c348538/bb5c47be-8546-4e88-a11e-bd82aa690c9a_8_NewEditor_iPhone_5.5_inch.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/33/24/98/3324983f-ad9b-09e2-bd9a-a2717fa71b2d/109cad6b-c90c-4887-bed5-e200b5d37d3c_src.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/19/e6/be19e68c-c285-24eb-b48e-f52a554adc8b/0c06fa7b-69c1-40f6-848a-71dc41f016f6_10_Scan_iPhone_5.5_inch.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c5/c5/89/c5c589d6-d5f4-24b0-d7b5-09ec17c8c7e5/f8628718-d6da-4bf8-8dba-cbb5e7bc681d_5_Capture_iPhone_5.5_inch.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/40/a4/6c/40a46c47-57f3-0815-e16d-6b262eb12094/d7f0a9fc-5789-460d-8b7b-aef3eaf869e1_7_DarkMode_iPhone_5.5_inch.png/392x696bb.png"
+      ],
+      "lastUpdated": "2026-02-19T16:13:10Z",
+      "addedAt": "2026-02-22T02:31:35.986Z"
+    },
+    {
+      "id": "lmwfy-ai-writing-companion",
+      "name": "LMWFY - AI Writing Companion",
+      "platform": "ios",
+      "category": "Productivity",
+      "price": 0,
+      "currency": "USD",
+      "rating": 0,
+      "reviewCount": 0,
+      "shortDescription": "An AI writing assistant that continues, inserts, or expands your text using inline #hashtag# notes. Built for fiction writers, bloggers, and creative writers who want AI help without leaving their flow.",
+      "fullDescription": "LMWFY (Let Me Write For You) is an AI-powered writing companion that integrates AI assistance directly into your writing flow using a unique inline annotation system. Instead of switching to a separate AI chat, you place #hashtag# notes anywhere in your text to tell the AI what you want -- continue a story, bridge two paragraphs, or expand on an idea. The AI generates context-aware suggestions that match your writing style and voice. You can accept, reject, or regenerate suggestions with one tap. The app supports multiple stories, auto-saves your work, and provides a clean, distraction-free writing environment.",
+      "features": [
+        "Inline #hashtag# notes to direct AI writing assistance",
+        "Three modes: continue from a point, insert between paragraphs, expand ideas",
+        "Context-aware generation that matches your writing style",
+        "Accept or reject AI suggestions with one tap",
+        "Generate multiple paragraph options to choose from",
+        "Automatic saving of all your work",
+        "Multiple stories and projects support",
+        "Clean, distraction-free writing interface"
+      ],
+      "pros": [
+        "Unique inline annotation approach keeps you in writing flow",
+        "AI suggestions feel natural and context-appropriate",
+        "Simple interface without overwhelming options",
+        "Great for overcoming writer's block"
+      ],
+      "cons": [
+        "New app with no reviews yet",
+        "Requires subscription for AI generation features",
+        "Limited to text content -- no image or research tools"
+      ],
+      "developer": "Swapnil Sawant",
+      "appStoreUrl": "https://apps.apple.com/us/app/lmwfy-ai-writing-companion/id6757945101?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/aa/76/10aa76b6-2095-fa25-404a-7fe88e419d5f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-17T16:25:55Z",
+      "addedAt": "2026-02-22T02:31:46.776Z"
+    },
+    {
+      "id": "google-maps",
+      "name": "Google Maps",
+      "platform": "ios",
+      "category": "Travel",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 7085069,
+      "shortDescription": "The world's most popular navigation and mapping app with real-time traffic, public transit directions, and business discovery. Essential for virtually any traveler or commuter.",
+      "fullDescription": "Google Maps is the go-to navigation app used by billions worldwide. It provides real-time GPS navigation for driving, walking, cycling, and public transit with live traffic data and automatic rerouting. Beyond navigation, it serves as a discovery platform for over 250 million businesses and places with photos, reviews, hours, and menus. Features like Street View, Immersive View, and Indoor Maps help you preview destinations before arriving. Offline maps let you navigate without internet in areas with poor connectivity. The app is completely free and supported by Google's vast data infrastructure.",
+      "features": [
+        "Real-time GPS navigation with live traffic and rerouting",
+        "Multi-modal directions: driving, walking, cycling, transit, ride-share",
+        "Street View and Immersive View for previewing destinations",
+        "Offline maps for areas without internet connectivity",
+        "Business discovery with reviews, photos, hours, and menus",
+        "Indoor maps for airports, malls, and transit stations",
+        "Lists for saving and sharing favorite places",
+        "Fuel-efficient route options to save on gas"
+      ],
+      "pros": [
+        "Most comprehensive and up-to-date map data globally",
+        "Real-time transit information is highly reliable",
+        "Offline maps are essential for international travel",
+        "Completely free with no premium tier"
+      ],
+      "cons": [
+        "Battery drain during extended navigation sessions",
+        "Privacy concerns with Google's location data collection",
+        "Ads for promoted businesses can clutter search results"
+      ],
+      "developer": "Google",
+      "appStoreUrl": "https://apps.apple.com/us/app/google-maps/id585027354?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cd/0c/6c/cd0c6c9c-40fa-61e5-9a77-7384c4496251/maps-0-1x_U007epad-0-0-0-1-0-0-0-0-85-220-0.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-15T18:23:27Z",
+      "addedAt": "2026-02-22T02:31:41.063Z"
+    },
+    {
+      "id": "maps-me-offline-maps-gps-nav",
+      "name": "MAPS.ME: Offline Maps, GPS Nav",
+      "platform": "ios",
+      "category": "Travel",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 76405,
+      "shortDescription": "Fast, fully offline maps with turn-by-turn navigation built on OpenStreetMap data. The best choice for international travelers who need reliable navigation without mobile data.",
+      "fullDescription": "MAPS.ME provides fast, detailed, and entirely offline maps with turn-by-turn navigation for driving, walking, and cycling. Trusted by over 140 million travelers, it stores complete maps on your device so you never need an internet connection. Maps are built on OpenStreetMap data, updated by millions of contributors daily, often including trails, paths, and points of interest missing from commercial alternatives. The app includes curated travel guides, hotel booking integration, and optimized storage so maps take minimal space on your device. It is especially popular among backpackers, hikers, and travelers visiting areas with unreliable internet.",
+      "features": [
+        "Complete offline maps with no internet required",
+        "Turn-by-turn navigation for driving, walking, and cycling",
+        "OpenStreetMap data with daily community updates",
+        "Curated travel guides for hundreds of destinations",
+        "Hiking trails and POIs missing from other map apps",
+        "Optimized storage: maps use minimal device space",
+        "Offline search for addresses and points of interest",
+        "Hotel and accommodation booking integration"
+      ],
+      "pros": [
+        "Truly works offline -- essential for remote travel",
+        "OpenStreetMap data includes trails and paths others miss",
+        "Maps are lightweight and download quickly",
+        "Free core functionality with no subscription"
+      ],
+      "cons": [
+        "Navigation quality varies by region compared to Google Maps",
+        "Ads for hotels and booking services can be intrusive",
+        "Real-time traffic data is not available (offline-first design)"
+      ],
+      "developer": "Convexity Holdings AG",
+      "appStoreUrl": "https://apps.apple.com/us/app/maps-me-offline-maps-gps-nav/id510623322?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e8/89/fa/e889fae6-56e4-2dd4-f2b8-47455ffe0cf6/AppIcon-0-0-1x_U007epad-0-1-0-0-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/c4/a3/f2/c4a3f2e7-6393-4e95-de87-8d6fbc9ac25d/ed245c8a-5924-4a47-bc25-85c904b1b0b3_Screen__U00231.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/c5/4d/b0/c54db023-cb19-dd58-ef0c-d62396cfbebd/7c4ce49d-4822-434e-ade1-3172a076fd4a_Screen__U00232.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/ba/75/8f/ba758fce-a604-1ac5-a70e-04ab8b610a13/35d758a7-3726-4c2d-ab3e-802c76fee220_Screen__U00233.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/ac/ec/0c/acec0c68-aed0-37f7-c7a7-b76ace6567ef/33aa3d33-b917-4003-864e-0d8aad85d79a_Screen__U00234.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/de/35/c3/de35c329-cca6-af40-ead5-b51bc599fbc5/bb8c35d0-cc07-4059-81b3-dcdd0ae443da_Screen__U00235.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/5b/68/5f/5b685fc6-8292-620f-b16a-a2e84c421924/86d58dd2-fddf-406c-a59b-bed15b021f8e_Screen__U00236.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/95/de/e1/95dee1d6-c522-4255-00cc-0451d96d00e2/ee898e08-e29e-4439-8552-cf14cac18af4_Screen__U00237.jpg/392x696bb.jpg"
+      ],
+      "lastUpdated": "2026-02-11T16:00:41Z",
+      "addedAt": "2026-02-22T02:31:41.064Z"
+    },
+    {
+      "id": "tripit-travel-planner",
+      "name": "TripIt: Travel Planner",
+      "platform": "ios",
+      "category": "Travel",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 296408,
+      "shortDescription": "The highest-rated travel itinerary organizer that automatically creates trip plans from your confirmation emails. Ideal for frequent travelers who want all booking details in one place.",
+      "fullDescription": "TripIt organizes all your travel plans into a single, comprehensive itinerary. Simply forward booking confirmation emails to plans@tripit.com and the app automatically extracts flights, hotels, car rentals, and activities into a clean timeline. Access all reservation details offline, including confirmation numbers, addresses, and check-in times. TripIt Pro adds real-time flight alerts, seat tracking, alternate flight suggestions, and points/miles tracking. The app syncs with your calendar, supports Siri shortcuts, and lets you share itineraries with travel companions. Used by nearly 20 million travelers.",
+      "features": [
+        "Auto-import itineraries by forwarding confirmation emails",
+        "Offline access to all reservation details and confirmation numbers",
+        "Maps and directions for every stop on your trip",
+        "Calendar sync for seeing travel plans alongside other events",
+        "Share itineraries with travel companions",
+        "Upload PDFs, boarding passes, and passport QR codes",
+        "Neighborhood safety scores and local tips (Pro)",
+        "Real-time flight alerts and alternate flight suggestions (Pro)"
+      ],
+      "pros": [
+        "Email forwarding makes itinerary building effortless",
+        "Offline access is essential when traveling internationally",
+        "Comprehensive view of an entire trip in one timeline",
+        "Supports virtually any booking confirmation format"
+      ],
+      "cons": [
+        "Best features (flight alerts, seat tracker) require Pro ($49/yr)",
+        "Auto-parsing occasionally misses details from complex bookings",
+        "Interface can feel cluttered for simple weekend trips"
+      ],
+      "developer": "TripIt",
+      "appStoreUrl": "https://apps.apple.com/us/app/tripit-travel-planner/id311035142?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/51/77/74/517774fd-9305-1aad-ac1d-ab6505f7a52f/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/85/1f/0a/851f0a79-d6f4-0912-7278-0c82f423c04e/d7a9199f-e496-4b7c-85f9-b8673b8533f6_en-US_iPhone_8_Plus_02_3Dview.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/17/1a/be171a76-0939-0fee-a26d-bc0e7fc52c45/d76414fa-ee05-4892-b568-a8e1a85a1c82_en-US_iPhone_8_Plus_01_3Dview.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6f/d1/bf/6fd1bf9d-8bf1-cf1c-8e17-e27219973910/ca4783cf-14ec-4d9c-8e38-2a364be5b97c_en-US_iPhone_8_Plus_03_trips.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7d/3b/ee/7d3bee6d-6d2e-1c6f-a39d-33b4c276151c/00348545-1f82-4d86-9a6e-c111bf6afda0_en-US_iPhone_8_Plus_04_richNotification.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/5d/d3/c9/5dd3c97b-0529-3eaa-b599-a1e90817ba16/de4c4663-a7c3-4461-8419-ad1c761b908b_en-US_iPhone_8_Plus_05_documents.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/46/2e/a2/462ea22e-1a8a-fbbc-d6bc-615c28e31483/5a8fc574-44ba-49a9-9e7b-4892ef67c4ec_en-US_iPhone_8_Plus_06_covidGuidance.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d5/68/96/d56896f0-d36a-ac7f-6513-f251b4cae8b1/c43fa9d8-6811-47ea-82f6-687481d7b00f_en-US_iPhone_8_Plus_07_nearbyCafe.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fe/4e/60/fe4e60df-f73c-a217-804c-3022f82164a4/00510263-d923-4089-b067-dd7e4b738336_en-US_iPhone_8_Plus_08_goNow.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/80/9a/e9/809ae95f-3679-56d1-69be-ea8351386d97/95fc5405-2810-4956-b256-fc08f1a08361_en-US_iPhone_8_Plus_09_carbonEmissions.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/6b/59/fc/6b59fc76-0020-ab1a-78e9-88a195b5773c/60861d2f-7c24-40a8-8d39-c1f0bd3b74fd_en-US_iPhone_8_Plus_10_travelStats.png/392x696bb.png"
+      ],
+      "lastUpdated": "2026-02-09T18:29:05Z",
+      "addedAt": "2026-02-22T02:31:41.545Z"
+    },
+    {
+      "id": "airbnb",
+      "name": "Airbnb",
+      "platform": "ios",
+      "category": "Travel",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 698676,
+      "shortDescription": "The leading vacation rental platform with 8+ million unique listings in 240+ countries, plus local experiences hosted by locals. Best for travelers seeking unique stays beyond traditional hotels.",
+      "fullDescription": "Airbnb connects travelers with unique accommodations and local experiences worldwide. With over 8 million listings in 240+ countries, you can find everything from treehouses and castles to city apartments and beachfront villas. The app offers 80+ filtering options to find exactly what you need, detailed listing pages with photos and verified reviews, and secure in-app messaging with hosts. Beyond stays, Airbnb Experiences lets you book activities led by local experts. The app also supports hosting, making it a two-sided marketplace. Wishlists, price alerts, and flexible date search help you plan trips efficiently.",
+      "features": [
+        "8+ million unique listings across 240+ countries",
+        "80+ filters: amenities, accessibility, property type, price range",
+        "Airbnb Experiences: activities and tours hosted by locals",
+        "Verified reviews and Superhost badges for quality assurance",
+        "Flexible date and destination search for trip inspiration",
+        "Secure in-app messaging and booking with host protection",
+        "Wishlists for saving and sharing favorite listings",
+        "Split payment for group trips"
+      ],
+      "pros": [
+        "Unmatched variety of unique, non-hotel accommodations",
+        "Experiences feature adds authentic local activities",
+        "Flexible search is great for open-ended trip planning",
+        "Verified reviews help set accurate expectations"
+      ],
+      "cons": [
+        "Cleaning fees and service fees can significantly increase total price",
+        "Quality varies widely between listings",
+        "Cancellation policies differ by host and can be strict"
+      ],
+      "developer": "Airbnb, Inc.",
+      "appStoreUrl": "https://apps.apple.com/us/app/airbnb/id401626263?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/1e/c2/f0/1ec2f0ba-e6a9-58cb-3eaa-59ca9fa625d4/AppIcon-0-0-1x_U007epad-0-1-0-0-0-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-19T07:52:25Z",
+      "addedAt": "2026-02-22T02:31:42.007Z"
+    },
+    {
+      "id": "tripadvisor-plan-book-trips",
+      "name": "Tripadvisor: Plan & Book Trips",
+      "platform": "ios",
+      "category": "Travel",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 457651,
+      "shortDescription": "The world's largest travel review platform with millions of reviews for hotels, restaurants, and attractions. Best for travelers who research thoroughly before booking.",
+      "fullDescription": "Tripadvisor is the world's largest travel guidance platform, helping travelers plan and book trips using reviews and recommendations from millions of fellow travelers. The app covers hotels, restaurants, experiences, and attractions with detailed ratings, photos, and traveler reviews. The AI trip builder generates personalized itineraries based on your saved places, and the Tripadvisor Rewards program lets you earn Trip Cash on bookings and travel planning activities. With over 400,000 bookable experiences and 600,000 hotels, it serves as both a research tool and a booking platform.",
+      "features": [
+        "Millions of traveler reviews for hotels, restaurants, and attractions",
+        "AI trip builder for generating personalized itineraries",
+        "Book hotels, experiences, and tours directly in the app",
+        "Tripadvisor Rewards: earn Trip Cash on bookings and planning",
+        "Near Me feature for discovering nearby restaurants and activities",
+        "Price comparison across multiple booking sites",
+        "Save favorites and organize trip ideas in one place",
+        "Forums for travel advice from experienced travelers"
+      ],
+      "pros": [
+        "Largest database of traveler reviews and ratings",
+        "Price comparison saves money by showing multiple booking options",
+        "AI trip builder makes itinerary creation quick",
+        "Rewards program gives cash back on bookings"
+      ],
+      "cons": [
+        "Some reviews may be biased or fake despite moderation",
+        "App can feel overwhelming with so much information",
+        "Push notifications and promotional content can be aggressive"
+      ],
+      "developer": "Tripadvisor",
+      "appStoreUrl": "https://apps.apple.com/us/app/tripadvisor-plan-book-trips/id284876795?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/25/58/e5/2558e5dd-4972-9772-12c3-8a4626c773fc/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/63/b6/28/63b6289b-4df8-4860-b5a1-b283d06807ce/0_APP_IPHONE_55_0.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c9/e0/a8/c9e0a8dd-1b00-ee95-348c-9e8036723a8d/1_APP_IPHONE_55_1.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ae/aa/60/aeaa6057-5af0-b9a3-9d7a-a2d4635fbb16/2_APP_IPHONE_55_2.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a8/8e/a5/a88ea580-e7d4-b331-7664-cbfa90c7700b/3_APP_IPHONE_55_3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/88/2e/66882e76-abef-bcb0-8708-db1463649f22/4_APP_IPHONE_55_4.png/392x696bb.png"
+      ],
+      "lastUpdated": "2026-02-19T14:20:42Z",
+      "addedAt": "2026-02-22T02:31:41.546Z"
+    },
+    {
+      "id": "wanderlog-travel-planner",
+      "name": "Wanderlog - Travel Planner",
+      "platform": "ios",
+      "category": "Travel",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.9,
+      "reviewCount": 29411,
+      "shortDescription": "A collaborative trip planning app with itinerary building, route optimization, and real-time group editing. Best for travelers who plan trips with friends and want everything in one place.",
+      "fullDescription": "Wanderlog is a free travel planning app designed for creating detailed trip itineraries, whether solo or with a group. It lets you organize flights, hotels, and attractions in one place, view plans on a map, and optimize driving routes for road trips. Real-time collaboration works like Google Docs -- invite friends and plan together. You can import reservations by forwarding emails or connecting Gmail, add places from curated travel guides with one click, and export your itinerary to Google Maps. After your trip, share a travel guide to inspire others. The free tier is generous, with Pro adding Gmail import and Google Maps export.",
+      "features": [
+        "Collaborative trip planning with real-time group editing",
+        "Map view showing all planned places and optimized routes",
+        "Auto-import reservations from forwarded emails or Gmail",
+        "Road trip planning with unlimited stops and route optimization",
+        "Curated travel guides with one-click place adding",
+        "Budget tracking for trip expenses",
+        "Drag-and-drop itinerary rearranging",
+        "Export itineraries to Google Maps (Pro)"
+      ],
+      "pros": [
+        "Real-time collaboration is best-in-class for group trip planning",
+        "Map-based planning makes visualizing your route intuitive",
+        "Free tier is genuinely generous for most travelers",
+        "Road trip features with route optimization are excellent"
+      ],
+      "cons": [
+        "Gmail import and Google Maps export require Pro subscription",
+        "Can feel over-featured for simple weekend trips",
+        "Mobile app is less polished than the web version"
+      ],
+      "developer": "Vacation and Travel Planner App LLC",
+      "appStoreUrl": "https://apps.apple.com/us/app/wanderlog-travel-planner/id1476732439?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/c0/1b/58c01b13-1886-7421-75bc-645a2053ac44/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-01T22:56:08Z",
+      "addedAt": "2026-02-22T02:31:41.546Z"
+    },
+    {
+      "id": "booking-com-hotels-travel",
+      "name": "Booking.com: Hotels & Travel",
+      "platform": "ios",
+      "category": "Travel",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviewCount": 1804761,
+      "shortDescription": "One of the world's largest accommodation booking platforms with millions of properties, plus flights, car rentals, and attractions. Best for travelers who want flexible booking with free cancellation.",
+      "fullDescription": "Booking.com is a comprehensive travel booking platform offering millions of accommodations worldwide, from hotels and hostels to apartments and unique stays. The app lets you book your entire trip -- accommodations, flights, car rentals, taxis, and attractions -- all in one place. Key differentiators include free cancellation on most properties, no booking fees, mobile-only discounts, and 24/7 customer service in 40+ languages. The Genius loyalty program offers increasing discounts at levels 1-3 based on bookings completed. Direct in-app chat with properties and paperless confirmation make managing bookings easy on the go.",
+      "features": [
+        "Millions of accommodations across every property type",
+        "Free cancellation available at most properties",
+        "Book flights, car rentals, taxis, and attractions in one app",
+        "Mobile-only discounts for booking through the app",
+        "Genius loyalty program with tiered discounts",
+        "24/7 customer service in 40+ languages",
+        "Filters for price, rating, amenities, and property type",
+        "Direct in-app chat with property hosts"
+      ],
+      "pros": [
+        "Free cancellation on most properties provides flexibility",
+        "No booking or credit card fees",
+        "Mobile-only deals incentivize app booking",
+        "Genius loyalty discounts reward frequent travelers"
+      ],
+      "cons": [
+        "Listed prices sometimes exclude taxes and fees",
+        "Genius discounts require completing multiple stays to unlock",
+        "App can send excessive push notifications about deals"
+      ],
+      "developer": "Booking.com",
+      "appStoreUrl": "https://apps.apple.com/us/app/booking-com-hotels-travel/id367003839?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/05/da/31/05da317a-55f5-8651-37c5-d2f14a102842/AppIcon-0-0-1x_U007epad-0-9-0-85-220.jpeg/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/de/02/f1/de02f108-b9bf-827b-c308-6bdd9192dbe7/0_APP_IPHONE_55_0.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b4/cb/42/b4cb4297-f32a-f81f-abce-d62e6b9d995d/1_APP_IPHONE_55_1.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2e/eb/68/2eeb6857-d8ec-4e9d-422d-f71bfc959757/2_APP_IPHONE_55_2.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/6b/cd/cf/6bcdcfbf-7c60-96c0-bf6e-a31f1e37d620/3_APP_IPHONE_55_3.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f1/d7/93/f1d793da-0449-36d9-38fb-08272eb024bc/4_APP_IPHONE_55_4.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/60/44/cb/6044cb27-6fe8-f07a-1493-cad6dcc44caf/5_APP_IPHONE_55_5.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cc/49/43/cc4943cf-04e2-a982-4fb8-89c99d4e513f/6_APP_IPHONE_55_6.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/16/88/33/168833fc-1e59-cc9d-5842-04ed10449f98/7_APP_IPHONE_55_7.jpg/392x696bb.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b6/68/57/b66857b2-f8d4-6ad5-c32e-c95001974895/8_APP_IPHONE_55_8.jpg/392x696bb.jpg"
+      ],
+      "lastUpdated": "2026-02-19T10:14:25Z",
+      "addedAt": "2026-02-22T02:31:42.009Z"
+    },
+    {
+      "id": "polarsteps-travel",
+      "name": "Polarsteps Travel",
+      "platform": "ios",
+      "category": "Travel",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.9,
+      "reviewCount": 7213,
+      "shortDescription": "An all-in-one travel app that automatically tracks your route and plots your photos on a personal world map. Best for travelers who want a beautiful record of their journeys without manual effort.",
+      "fullDescription": "Polarsteps automatically records your travel route in the background, plotting your path and photos on a beautiful digital world map. Over 10 million explorers use it to plan, track, and relive their travels. The tracking works offline and is battery-efficient, so you can keep your phone in your pocket and focus on the experience. After your trip, the app creates a visual story of your journey that you can share or even turn into a printed hardback Travel Book. Planning features include curated destination guides, an itinerary planner, and transport suggestions between stops.",
+      "features": [
+        "Automatic GPS route tracking (battery-efficient, works offline)",
+        "Photos plotted on a personal world map timeline",
+        "Curated travel guides with insider tips from editors and travelers",
+        "Itinerary planner with transport options between destinations",
+        "Print your trip as a hardback Travel Book",
+        "Share trips with friends and family via link",
+        "Full privacy control over what is shared",
+        "Travel statistics and visited countries tracker"
+      ],
+      "pros": [
+        "Automatic tracking creates a travel diary with zero effort",
+        "Battery-efficient and works completely offline",
+        "Travel Book printing is a unique tangible memento",
+        "Beautiful visual presentation of your travel history"
+      ],
+      "cons": [
+        "Travel Book printing can be expensive",
+        "Some features require Polarsteps Plus subscription",
+        "Route accuracy depends on GPS signal quality"
+      ],
+      "developer": "Polarsteps B.V.",
+      "appStoreUrl": "https://apps.apple.com/us/app/polarsteps-travel/id947925763?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/54/3c/fe/543cfebe-d356-bcb7-7270-1f99025dda48/AppIcon-0-0-1x_U007ephone-0-1-sRGB-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [],
+      "lastUpdated": "2026-02-18T07:09:06Z",
+      "addedAt": "2026-02-22T02:31:41.546Z"
+    },
+    {
+      "id": "photo-map-travel-tracker",
+      "name": "Photo Map - Travel Tracker",
+      "platform": "ios",
+      "category": "Travel",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.7,
+      "reviewCount": 1707,
+      "shortDescription": "Turns your photo library into an interactive travel map, framing your best shots in the shape of states, countries, and territories. Great for visual travelers who want to see where they have been.",
+      "fullDescription": "Photo Map uses your existing photo library to tell the story of the places you have visited. It automatically scans your photos and groups them by location, displaying them on a map organized by state, country, province, or territory. You can highlight your favorite photo from each trip and frame it in the geographic outline of the place it was taken. Share customizable map images showing your travel history on social media. The app also helps inspire future travel by showing you places you have not yet visited and encouraging you to fill out your personal map.",
+      "features": [
+        "Automatic photo scanning and location-based grouping",
+        "Interactive travel map organized by state, country, territory",
+        "Photo framing in geographic outlines of destinations",
+        "Customizable map sharing for social media",
+        "Trip rediscovery organized by journeys and stops",
+        "Travel inspiration showing unvisited destinations",
+        "Favorite photo highlighting for each location"
+      ],
+      "pros": [
+        "Works with your existing photo library -- no manual input needed",
+        "Geographic photo frames are a unique and shareable feature",
+        "Great motivation to fill out your personal travel map",
+        "Simple and focused on doing one thing well"
+      ],
+      "cons": [
+        "Requires photos with location data to function",
+        "Limited editing or organizational features beyond the map",
+        "Has not been updated recently compared to competitors"
+      ],
+      "developer": "Applorium Ltd",
+      "appStoreUrl": "https://apps.apple.com/us/app/photo-map-travel-tracker/id1472276407?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/52/95/c7/5295c7c6-211f-f3a9-65d7-e4b732e84731/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/04/7a/55/047a55bc-fedf-67f3-827d-0a85f0b80131/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/97/e0/0b/97e00be6-1b69-5d63-6f54-44881cbb0b65/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/5d/63/25/5d63250d-0044-170a-ebe6-dc15a412f76d/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/66/61/d9/6661d99d-73cd-d126-c33d-cf582a1f970c/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/94/e1/52/94e15261-ec65-fff4-8e62-f570b235957d/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/c1/d5/48/c1d548bf-f533-1d92-a295-97a7f647aa36/pr_source.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/cb/9b/d0/cb9bd08a-f1b2-e2fb-1499-52a60c9fc4a6/pr_source.png/392x696bb.png"
+      ],
+      "lastUpdated": "2024-02-27T12:45:40Z",
+      "addedAt": "2026-02-22T02:31:23.740Z"
+    },
+    {
+      "id": "goodtask-to-do-list-tasks",
+      "name": "GoodTask - To Do List, Tasks",
+      "platform": "ios",
+      "category": "Productivity",
+      "price": 0,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviewCount": 1969,
+      "shortDescription": "A power-user task manager built on top of iOS Reminders and Calendars with smart lists, board views, and quick-add presets. Best for Apple users who want advanced features on top of their existing Reminders data.",
+      "fullDescription": "GoodTask is a task and project manager that extends iOS Reminders and Calendars with a powerful, customizable interface. Instead of replacing your existing system, it syncs with iCloud Reminders and your calendars, adding features like Smart Lists with custom filters, Board view (Kanban-style), text snippet presets for quick task creation, and multiple view modes (list, day, week, month). It bridges the gap between Apple's simple built-in Reminders and full-featured project management tools. Available for iPhone, iPad, Mac, and Apple Watch with a one-time purchase or subscription option.",
+      "features": [
+        "Built on iOS Reminders and Calendars (syncs with iCloud)",
+        "Smart Lists with custom filters by tag, date, priority, list",
+        "Board view (Kanban) with Date, Priority, List, and Tag grouping",
+        "Quick Add with text presets and text snippets",
+        "Multiple views: List, Day, Week, Month, Board",
+        "Recurring tasks with full customization",
+        "Apple Watch app for quick task management",
+        "Drag-and-drop task organization"
+      ],
+      "pros": [
+        "Works with your existing Reminders -- no data migration needed",
+        "Smart Lists are incredibly flexible for custom views",
+        "Board view adds Kanban without needing a separate app",
+        "Syncs seamlessly via iCloud with no separate account"
+      ],
+      "cons": [
+        "Apple ecosystem only -- no Android or Windows",
+        "Learning curve for setting up Smart Lists and presets",
+        "UI can feel dense compared to more minimal task apps"
+      ],
+      "developer": "haha Interactive",
+      "appStoreUrl": "https://apps.apple.com/us/app/goodtask-to-do-list-tasks/id1068039220?uo=4",
+      "iconUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/c2/a4/3ec2a4c2-d382-3e40-0120-d9f6a080325a/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.jpg",
+      "screenshotUrls": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/de/08/a1/de08a143-a36d-19c5-9dbd-cc09e9fc3eee/f38b4707-311f-4c6c-a66d-8684969952ca_new55-1.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4b/b1/c8/4bb1c8ed-0003-ecaf-da59-4793ebbdc9da/17075167-8524-4d3b-be32-548495203617_new55-2.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/24/7d/40/247d40b3-a9e2-4f22-8e9d-e740ef946dae/38ebbdb5-1409-4967-b686-bbc536d6823e_new55-3.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1b/a0/ba/1ba0ba3b-c53c-d09b-2924-fb41603debda/310e6f48-87d4-48cd-802b-12a01cc1b058_new55-4.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8c/44/28/8c442829-304f-506a-da31-e5f51b8cf8b0/d7878196-0bba-46ac-98b6-fd9f26c1ee79_new55-5.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/86/76/7e/86767edd-f835-8b21-8c89-acda69463de5/2d34e3f1-44e7-460f-8170-c36e6dc7e9c6_new55-6.png/392x696bb.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c0/a6/df/c0a6dfc9-a1c1-ffcc-5fda-f22b7e5cca2d/9ba11429-87da-405f-85d8-0458854445fd_new55-7.png/392x696bb.png"
+      ],
+      "lastUpdated": "2025-12-12T01:40:12Z",
+      "addedAt": "2026-02-22T02:31:36.814Z"
+    }
+  ]
+}

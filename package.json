@@ -1,0 +1,44 @@
+{
+  "name": "mcp-apps",
+  "version": "0.1.0",
+  "description": "Unified MCP server hosting multiple apps with shared framework — AppDiscovery + Regex Playground",
+  "type": "module",
+  "main": "./build/index.js",
+  "bin": {
+    "mcp-apps": "./build/index.js"
+  },
+  "scripts": {
+    "build:views": "cross-env INPUT=views/appdiscovery.html vite build && cross-env INPUT=views/regex.html vite build",
+    "build": "npm run build:views && tsc && chmod 755 build/index.js",
+    "dev": "tsc --watch",
+    "import": "node build/apps/appdiscovery/scripts/import-app.js",
+    "serve": "node build/server-http.js"
+  },
+  "files": [
+    "build",
+    "dist",
+    "data"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "app-discovery",
+    "regex",
+    "ai",
+    "claude"
+  ],
+  "author": "Impressions Agency",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "^1.1.0",
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "cross-env": "^10.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-singlefile": "^2.3.0"
+  }
+}
