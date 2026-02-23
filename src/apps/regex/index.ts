@@ -22,6 +22,7 @@ function makeHandler(handler: (params: any) => { text: string; json: Record<stri
     return {
       content: [
         { type: "text" as const, text: result.text },
+        { type: "text" as const, text: JSON.stringify(result.json) },
       ],
       structuredContent: result.json,
     };

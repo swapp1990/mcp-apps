@@ -24,6 +24,7 @@ function makeHandler(handler: (params: any) => Promise<{ text: string; json: Rec
     return {
       content: [
         { type: "text" as const, text: result.text },
+        { type: "text" as const, text: JSON.stringify(result.json) },
       ],
       structuredContent: result.json,
     };
