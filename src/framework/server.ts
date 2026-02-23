@@ -80,6 +80,9 @@ async function handleMcpRequest(
   req: import("http").IncomingMessage,
   res: import("http").ServerResponse
 ): Promise<void> {
+  const ua = req.headers["user-agent"] || "unknown";
+  console.error(`[${app.name}] ${req.method} from ${ua}`);
+
   const mcpServer = createAppMcpServer(app, viewHtml);
   const transport = new StreamableHTTPServerTransport({
     sessionIdGenerator: undefined,
