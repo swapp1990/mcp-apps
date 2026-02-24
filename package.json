@@ -12,7 +12,9 @@
     "build": "npm run build:views && tsc && chmod 755 build/index.js",
     "dev": "tsc --watch",
     "import": "node build/apps/appdiscovery/scripts/import-app.js",
-    "serve": "node build/server-http.js"
+    "serve": "node build/server-http.js",
+    "screenshots": "npx tsx scripts/screenshots/runner.ts",
+    "screenshots:regex": "npx tsx scripts/screenshots/runner.ts --app=regex"
   },
   "files": [
     "build",
@@ -37,6 +39,8 @@
   "devDependencies": {
     "@types/node": "^25.3.0",
     "cross-env": "^10.1.0",
+    "playwright": "^1.58.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
     "vite-plugin-singlefile": "^2.3.0"
