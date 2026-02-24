@@ -11,21 +11,33 @@ import type { McpAppModule } from "../../framework/types.js";
 
 const TEST_CASES_SCHEMA = z.array(
   z.object({
-    input: z.string().describe("Test string"),
+    input: z.string().max(10000).describe("Test string"),
     should_match: z.boolean().describe("Whether the pattern should match this string"),
   })
-).describe("Array of test cases to validate the pattern against");
+).min(1).max(50).describe("Array of test cases to validate the pattern against (1-50 cases)");
 
 function makeHandler(handler: (params: any) => { text: string; json: Record<string, unknown> }) {
   return async (params: any) => {
-    const result = handler(params);
-    return {
-      content: [
-        { type: "text" as const, text: result.text },
-        { type: "text" as const, text: JSON.stringify(result.json) },
-      ],
-      structuredContent: result.json,
-    };
+    try {
+      const result = handler(params);
+      return {
+        content: [
+          { type: "text" as const, text: result.text },
+          { type: "text" as const, text: JSON.stringify(result.json) },
+        ],
+        structuredContent: result.json,
+      };
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : "An unexpected error occurred";
+      const errorJson = { __regexplayground__: true, viewType: "error", data: { error: message } };
+      return {
+        content: [
+          { type: "text" as const, text: `Error: ${message}` },
+          { type: "text" as const, text: JSON.stringify(errorJson) },
+        ],
+        structuredContent: errorJson,
+      };
+    }
   };
 }
 
@@ -40,9 +52,9 @@ const regexApp: McpAppModule = {
       title: "Test Regex",
       description: "Test a regex pattern against a test string. Returns all matches with indices and capture groups. Use when a user wants to test, try, or check a regex pattern.",
       inputSchema: {
-        pattern: z.string().describe("The regex pattern (without delimiters)"),
-        flags: z.string().optional().describe("Regex flags (e.g., 'gi', 'gm'). Default: no flags."),
-        test_string: z.string().describe("The string to test the pattern against"),
+        pattern: z.string().min(1).max(5000).describe("The regex pattern (without delimiters)"),
+        flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi', 'gm'). Default: no flags."),
+        test_string: z.string().min(1).max(100000).describe("The string to test the pattern against"),
       },
       _meta: { ui: { resourceUri } },
     }, makeHandler(handleTestRegex));
@@ -51,8 +63,8 @@ const regexApp: McpAppModule = {
       title: "Explain Regex",
       description: "Explain a regex pattern by breaking it into annotated tokens with human-readable descriptions. Use when a user wants to understand, explain, or break down a regex.",
       inputSchema: {
-        pattern: z.string().describe("The regex pattern to explain (without delimiters)"),
-        flags: z.string().optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
+        pattern: z.string().min(1).max(5000).describe("The regex pattern to explain (without delimiters)"),
+        flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
       },
       _meta: { ui: { resourceUri } },
     }, makeHandler(handleExplainRegex));
@@ -70,9 +82,9 @@ const regexApp: McpAppModule = {
       title: "Generate Regex",
       description: "Validate a regex pattern against test cases (should-match and should-not-match). Use when a user asks to generate, create, or build a regex and wants to verify it works.",
       inputSchema: {
-        pattern: z.string().describe("The regex pattern to validate"),
-        flags: z.string().optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
-        description: z.string().optional().describe("Human-readable description of what the regex should match"),
+        pattern: z.string().min(1).max(5000).describe("The regex pattern to validate"),
+        flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
+        description: z.string().max(500).optional().describe("Human-readable description of what the regex should match"),
         test_cases: TEST_CASES_SCHEMA,
       },
       _meta: { ui: { resourceUri } },
@@ -83,17 +95,17 @@ const regexApp: McpAppModule = {
     server.registerTool("test_regex", {
       description: "Test a regex pattern against a test string. Returns all matches with indices and capture groups. Use when a user wants to test, try, or check a regex pattern.",
       inputSchema: {
-        pattern: z.string().describe("The regex pattern (without delimiters)"),
-        flags: z.string().optional().describe("Regex flags (e.g., 'gi', 'gm'). Default: no flags."),
-        test_string: z.string().describe("The string to test the pattern against"),
+        pattern: z.string().min(1).max(5000).describe("The regex pattern (without delimiters)"),
+        flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi', 'gm'). Default: no flags."),
+        test_string: z.string().min(1).max(100000).describe("The string to test the pattern against"),
       },
     }, makeHandler(handleTestRegex));
 
     server.registerTool("explain_regex", {
       description: "Explain a regex pattern by breaking it into annotated tokens with human-readable descriptions. Use when a user wants to understand, explain, or break down a regex.",
       inputSchema: {
-        pattern: z.string().describe("The regex pattern to explain (without delimiters)"),
-        flags: z.string().optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
+        pattern: z.string().min(1).max(5000).describe("The regex pattern to explain (without delimiters)"),
+        flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
       },
     }, makeHandler(handleExplainRegex));
 
@@ -107,9 +119,9 @@ const regexApp: McpAppModule = {
     server.registerTool("generate_regex", {
       description: "Validate a regex pattern against test cases (should-match and should-not-match). Use when a user asks to generate, create, or build a regex and wants to verify it works.",
       inputSchema: {
-        pattern: z.string().describe("The regex pattern to validate"),
-        flags: z.string().optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
-        description: z.string().optional().describe("Human-readable description of what the regex should match"),
+        pattern: z.string().min(1).max(5000).describe("The regex pattern to validate"),
+        flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
+        description: z.string().max(500).optional().describe("Human-readable description of what the regex should match"),
         test_cases: TEST_CASES_SCHEMA,
       },
     }, makeHandler(handleGenerateRegex));

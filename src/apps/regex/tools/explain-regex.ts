@@ -6,6 +6,18 @@ export function handleExplainRegex(input: {
   flags?: string;
 }): ToolResult {
   const flags = input.flags ?? "";
+
+  // Validate regex is parseable before explaining
+  try {
+    new RegExp(input.pattern, flags);
+  } catch (e: unknown) {
+    const message = e instanceof Error ? e.message : "Invalid regex pattern";
+    return {
+      text: `Invalid regex: ${message}`,
+      json: { __regexplayground__: true, viewType: "error", data: { error: message, pattern: input.pattern, flags } },
+    };
+  }
+
   const result = explainRegex(input.pattern, flags);
 
   const tokenLines = result.tokens.map(

@@ -36,7 +36,13 @@ const FLAG_DESCRIPTIONS: Record<string, string> = {
 };
 
 export function explainRegex(pattern: string, flags: string): ExplainResult {
-  const tokens = tokenize(pattern);
+  let tokens: Token[];
+  try {
+    tokens = tokenize(pattern);
+  } catch {
+    tokens = [{ token: pattern, category: "literal", description: "Could not parse pattern" }];
+  }
+
   const flagDescriptions = flags
     .split("")
     .filter((f) => FLAG_DESCRIPTIONS[f])
