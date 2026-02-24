@@ -85,11 +85,10 @@ let currentTestData: RegexTestResult | null = null;
 let currentCheatsheetData: CheatsheetData | null = null;
 let currentGenerateData: GenerateData | null = null;
 let activeCheatsheetCategory = "All";
-let cheatsheetSearch = "";
 
 // --- DOM refs ---
 const contentEl = document.getElementById("content")!;
-const modeBadge = document.getElementById("mode-badge")!;
+const modeBadge = document.getElementById("mode-badge");
 
 // --- Match highlight color palette ---
 const HIGHLIGHT_COLORS = [
@@ -194,23 +193,22 @@ function handleEnvelope(env: ViewEnvelope) {
   switch (env.viewType) {
     case "test":
       currentTestData = env.data as RegexTestResult;
-      modeBadge.textContent = "Test";
+      if (modeBadge) modeBadge.textContent ="Test";
       renderTestMode(currentTestData);
       break;
     case "explain":
-      modeBadge.textContent = "Explain";
+      if (modeBadge) modeBadge.textContent ="Explain";
       renderExplainMode(env.data as ExplainResult);
       break;
     case "generate":
       currentGenerateData = env.data as GenerateData;
-      modeBadge.textContent = "Generate";
+      if (modeBadge) modeBadge.textContent ="Generate";
       renderGenerateMode(currentGenerateData);
       break;
     case "cheatsheet":
       currentCheatsheetData = env.data as CheatsheetData;
       activeCheatsheetCategory = currentCheatsheetData.activeCategory || "All";
-      cheatsheetSearch = "";
-      modeBadge.textContent = "Cheatsheet";
+      if (modeBadge) modeBadge.textContent ="Cheatsheet";
       renderCheatsheetMode(currentCheatsheetData);
       break;
   }
@@ -575,7 +573,7 @@ function renderGenerateMode(data: GenerateData) {
 function buildTestCaseListItems(results: ValidationResult[]): string {
   return results.map((r) => {
     const cls = r.passed ? "tc-pass" : "tc-fail";
-    const icon = r.passed ? "\u2713" : "\u2717";
+    const icon = r.passed ? "PASS" : "FAIL";
     const expected = r.shouldMatch ? "should match" : "should not match";
     return `<li class="${cls}">
       <span class="tc-icon">${icon}</span>
@@ -600,9 +598,6 @@ function renderCheatsheetMode(data: CheatsheetData) {
   }
   html += `</div>`;
 
-  // Search
-  html += `<div class="search-filter"><input type="text" id="cheatsheet-search" placeholder="Search patterns..." value="${escAttr(cheatsheetSearch)}"></div>`;
-
   // Pattern cards
   html += `<div class="pattern-cards" id="pattern-cards">`;
   html += buildPatternCards(getFilteredCheatsheetPatterns(data.patterns));
@@ -618,16 +613,6 @@ function renderCheatsheetMode(data: CheatsheetData) {
     });
   });
 
-  // Wire up search
-  const searchInput = document.getElementById("cheatsheet-search") as HTMLInputElement;
-  searchInput.addEventListener("input", () => {
-    cheatsheetSearch = searchInput.value;
-    const cardsEl = document.getElementById("pattern-cards")!;
-    cardsEl.innerHTML = buildPatternCards(getFilteredCheatsheetPatterns(data.patterns));
-    wireUpTryButtons();
-    notifySize();
-  });
-
   wireUpTryButtons();
 }
 
@@ -635,15 +620,6 @@ function getFilteredCheatsheetPatterns(patterns: PatternEntry[]): PatternEntry[]
   let filtered = patterns;
   if (activeCheatsheetCategory && activeCheatsheetCategory !== "All") {
     filtered = filtered.filter((p) => p.category === activeCheatsheetCategory);
-  }
-  if (cheatsheetSearch) {
-    const q = cheatsheetSearch.toLowerCase();
-    filtered = filtered.filter(
-      (p) =>
-        p.name.toLowerCase().includes(q) ||
-        p.description.toLowerCase().includes(q) ||
-        p.pattern.toLowerCase().includes(q)
-    );
   }
   return filtered;
 }
@@ -674,7 +650,7 @@ function wireUpTryButtons() {
         const result = runRegexClientSide(p.pattern, p.flags || "g", p.example);
         currentTestData = result;
         currentViewType = "test";
-        modeBadge.textContent = "Test";
+        if (modeBadge) modeBadge.textContent ="Test";
         renderTestMode(result);
         notifySize();
       }
