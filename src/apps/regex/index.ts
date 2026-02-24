@@ -41,6 +41,14 @@ function makeHandler(handler: (params: any) => { text: string; json: Record<stri
   };
 }
 
+// All regex tools are pure local computation — no external systems, no side effects.
+const REGEX_ANNOTATIONS = {
+  readOnlyHint: true,
+  destructiveHint: false,
+  openWorldHint: false,
+  idempotentHint: true,
+};
+
 const regexApp: McpAppModule = {
   name: "regex",
   title: "Regex Playground",
@@ -50,7 +58,8 @@ const regexApp: McpAppModule = {
   registerTools(server: McpServer, resourceUri: string) {
     registerAppTool(server, "test_regex", {
       title: "Test Regex",
-      description: "Test a regex pattern against a test string. Returns all matches with indices and capture groups. Use when a user wants to test, try, or check a regex pattern.",
+      description: "Test a regex pattern against a string. Returns all matches with indices and capture groups.",
+      annotations: REGEX_ANNOTATIONS,
       inputSchema: {
         pattern: z.string().min(1).max(5000).describe("The regex pattern (without delimiters)"),
         flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi', 'gm'). Default: no flags."),
@@ -61,7 +70,8 @@ const regexApp: McpAppModule = {
 
     registerAppTool(server, "explain_regex", {
       title: "Explain Regex",
-      description: "Explain a regex pattern by breaking it into annotated tokens with human-readable descriptions. Use when a user wants to understand, explain, or break down a regex.",
+      description: "Break down a regex pattern into annotated tokens with human-readable descriptions.",
+      annotations: REGEX_ANNOTATIONS,
       inputSchema: {
         pattern: z.string().min(1).max(5000).describe("The regex pattern to explain (without delimiters)"),
         flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
@@ -71,7 +81,8 @@ const regexApp: McpAppModule = {
 
     registerAppTool(server, "common_patterns", {
       title: "Common Patterns",
-      description: "Browse a catalog of ~25 common regex patterns organized by category. Use when a user asks for common patterns, regex examples, a cheatsheet, or wants to find a regex for a common use case.",
+      description: "Browse a catalog of common regex patterns organized by category.",
+      annotations: REGEX_ANNOTATIONS,
       inputSchema: {
         category: z.string().optional().describe("Filter by category: Validation, Extraction, Formatting, Web, Numbers, or All"),
       },
@@ -79,8 +90,9 @@ const regexApp: McpAppModule = {
     }, makeHandler(handleCommonPatterns));
 
     registerAppTool(server, "generate_regex", {
-      title: "Generate Regex",
-      description: "Validate a regex pattern against test cases (should-match and should-not-match). Use when a user asks to generate, create, or build a regex and wants to verify it works.",
+      title: "Validate Regex",
+      description: "Validate a regex pattern against test cases (should-match and should-not-match lists).",
+      annotations: REGEX_ANNOTATIONS,
       inputSchema: {
         pattern: z.string().min(1).max(5000).describe("The regex pattern to validate"),
         flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
@@ -93,7 +105,8 @@ const regexApp: McpAppModule = {
 
   registerStdioTools(server: McpServer) {
     server.registerTool("test_regex", {
-      description: "Test a regex pattern against a test string. Returns all matches with indices and capture groups. Use when a user wants to test, try, or check a regex pattern.",
+      description: "Test a regex pattern against a string. Returns all matches with indices and capture groups.",
+      annotations: REGEX_ANNOTATIONS,
       inputSchema: {
         pattern: z.string().min(1).max(5000).describe("The regex pattern (without delimiters)"),
         flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi', 'gm'). Default: no flags."),
@@ -102,7 +115,8 @@ const regexApp: McpAppModule = {
     }, makeHandler(handleTestRegex));
 
     server.registerTool("explain_regex", {
-      description: "Explain a regex pattern by breaking it into annotated tokens with human-readable descriptions. Use when a user wants to understand, explain, or break down a regex.",
+      description: "Break down a regex pattern into annotated tokens with human-readable descriptions.",
+      annotations: REGEX_ANNOTATIONS,
       inputSchema: {
         pattern: z.string().min(1).max(5000).describe("The regex pattern to explain (without delimiters)"),
         flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
@@ -110,14 +124,16 @@ const regexApp: McpAppModule = {
     }, makeHandler(handleExplainRegex));
 
     server.registerTool("common_patterns", {
-      description: "Browse a catalog of ~25 common regex patterns organized by category (Validation, Extraction, Formatting, Web, Numbers). Use when a user asks for common patterns, regex examples, a cheatsheet, or wants to find a regex for a common use case.",
+      description: "Browse a catalog of common regex patterns organized by category (Validation, Extraction, Formatting, Web, Numbers).",
+      annotations: REGEX_ANNOTATIONS,
       inputSchema: {
         category: z.string().optional().describe("Filter by category: Validation, Extraction, Formatting, Web, Numbers, or All"),
       },
     }, makeHandler(handleCommonPatterns));
 
     server.registerTool("generate_regex", {
-      description: "Validate a regex pattern against test cases (should-match and should-not-match). Use when a user asks to generate, create, or build a regex and wants to verify it works.",
+      description: "Validate a regex pattern against test cases (should-match and should-not-match lists).",
+      annotations: REGEX_ANNOTATIONS,
       inputSchema: {
         pattern: z.string().min(1).max(5000).describe("The regex pattern to validate"),
         flags: z.string().max(10).optional().describe("Regex flags (e.g., 'gi'). Default: no flags."),
