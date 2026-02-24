@@ -105,6 +105,117 @@ async function handleMcpRequest(
   });
 }
 
+// --- Static page templates ---
+
+const PAGE_STYLE = `
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; line-height: 1.6; }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  h2 { font-size: 17px; margin-top: 28px; }
+  p, li { font-size: 14px; }
+  a { color: #3b82f6; }
+  .updated { color: #666; font-size: 13px; margin-bottom: 24px; }
+`;
+
+function pageShell(title: string, body: string, baseUrl: string): string {
+  return `<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title} — MCP Apps</title><style>${PAGE_STYLE}</style></head><body>
+${body}
+<hr style="margin-top:32px;border:none;border-top:1px solid #e5e7eb">
+<p style="font-size:12px;color:#999"><a href="${baseUrl}">MCP Apps</a> · <a href="${baseUrl}/privacy">Privacy</a> · <a href="${baseUrl}/terms">Terms</a> · <a href="${baseUrl}/support">Support</a></p>
+</body></html>`;
+}
+
+const staticPages = {
+  "/privacy": (baseUrl: string) => pageShell("Privacy Policy", `
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: February 23, 2026</p>
+
+<p>MCP Apps ("we", "us") provides MCP server applications including Regex Playground and AppDiscovery. This policy describes how we handle your data.</p>
+
+<h2>Data We Process</h2>
+<p>When you use our tools through ChatGPT or Claude, your input (regex patterns, test strings, search queries) is sent to our server, processed, and returned in the response. <strong>We do not store, log, or retain your input data.</strong> Each request is stateless — processed in memory and discarded immediately.</p>
+
+<h2>Data We Do Not Collect</h2>
+<ul>
+  <li>No user accounts or authentication</li>
+  <li>No cookies, tracking pixels, or analytics</li>
+  <li>No personal information (names, emails, locations)</li>
+  <li>No conversation history or chat content</li>
+  <li>No device fingerprinting</li>
+</ul>
+
+<h2>Server Logs</h2>
+<p>Our server logs HTTP request metadata (timestamp, user-agent, request path) for operational monitoring. Logs do not contain request bodies or your input data. Logs are retained for up to 30 days and are not shared with third parties.</p>
+
+<h2>Third-Party Services</h2>
+<p>Regex Playground performs all computation on our server with no external API calls. AppDiscovery queries the Apple App Store API to retrieve publicly available app metadata.</p>
+
+<h2>Data Sharing</h2>
+<p>We do not sell, share, or transfer your data to third parties, except as required by law.</p>
+
+<h2>Children's Privacy</h2>
+<p>Our services are not directed at children under 13. We do not knowingly collect data from children.</p>
+
+<h2>Changes</h2>
+<p>We may update this policy. Changes will be posted at this URL with an updated date.</p>
+
+<h2>Contact</h2>
+<p>Questions? Reach us at <a href="${baseUrl}/support">support</a> or email <a href="mailto:privacy@swapp1990.org">privacy@swapp1990.org</a>.</p>
+`, baseUrl),
+
+  "/terms": (baseUrl: string) => pageShell("Terms of Service", `
+<h1>Terms of Service</h1>
+<p class="updated">Last updated: February 23, 2026</p>
+
+<p>By using MCP Apps ("Service"), you agree to these terms.</p>
+
+<h2>Service Description</h2>
+<p>MCP Apps provides developer tools (Regex Playground, AppDiscovery) accessible through MCP-compatible AI assistants like ChatGPT and Claude. The tools process your input and return results.</p>
+
+<h2>Acceptable Use</h2>
+<p>You may use the Service for any lawful purpose. You agree not to:</p>
+<ul>
+  <li>Send excessive automated requests that degrade service for others</li>
+  <li>Attempt to access systems or data beyond the provided MCP endpoints</li>
+  <li>Use the Service to process data you are not authorized to handle</li>
+</ul>
+
+<h2>No Warranty</h2>
+<p>The Service is provided "as is" without warranties of any kind. Regex results, pattern explanations, and app discovery data are provided for informational purposes and may contain errors.</p>
+
+<h2>Limitation of Liability</h2>
+<p>To the maximum extent permitted by law, we are not liable for any damages arising from your use of the Service, including but not limited to incorrect regex results or app data.</p>
+
+<h2>Availability</h2>
+<p>We aim to keep the Service available but do not guarantee uptime. We may modify, suspend, or discontinue the Service at any time.</p>
+
+<h2>Changes</h2>
+<p>We may update these terms. Continued use after changes constitutes acceptance.</p>
+
+<h2>Contact</h2>
+<p>Questions? Reach us at <a href="${baseUrl}/support">support</a>.</p>
+`, baseUrl),
+
+  "/support": (baseUrl: string) => pageShell("Support", `
+<h1>Support</h1>
+
+<h2>Get Help</h2>
+<p>If you're experiencing issues with Regex Playground, AppDiscovery, or any MCP Apps tool:</p>
+<ul>
+  <li><strong>Report a bug or request a feature:</strong> <a href="https://github.com/swapp1990/mcp-apps/issues">GitHub Issues</a></li>
+  <li><strong>Email:</strong> <a href="mailto:support@swapp1990.org">support@swapp1990.org</a></li>
+</ul>
+
+<h2>Common Issues</h2>
+<ul>
+  <li><strong>View not updating after app update?</strong> ChatGPT aggressively caches the UI. Remove the app and re-add it to pick up changes.</li>
+  <li><strong>Dark mode not working?</strong> The app reads your ChatGPT theme setting. Make sure you're using the latest version.</li>
+</ul>
+
+<h2>Source Code</h2>
+<p>MCP Apps is open source: <a href="https://github.com/swapp1990/mcp-apps">github.com/swapp1990/mcp-apps</a></p>
+`, baseUrl),
+};
+
 /** Start the HTTP server */
 export async function startHttpServer(config: ServerConfig): Promise<void> {
   const views = loadViewHtml(config);
@@ -160,6 +271,13 @@ export async function startHttpServer(config: ServerConfig): Promise<void> {
 <ul>${appList}</ul>
 <p><a href="/health">Health check</a></p>
 </body></html>`);
+      return;
+    }
+
+    // Static pages: privacy, terms, support
+    if (req.method === "GET" && (url === "/privacy" || url === "/terms" || url === "/support")) {
+      res.writeHead(200, { "Content-Type": "text/html" });
+      res.end(staticPages[url as "/privacy" | "/terms" | "/support"](baseUrl));
       return;
     }
 
