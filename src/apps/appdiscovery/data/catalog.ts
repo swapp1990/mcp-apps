@@ -9,7 +9,7 @@ function getCatalogPath(): string {
   if (process.env.CATALOG_PATH) {
     return resolve(process.env.CATALOG_PATH);
   }
-  return resolve(__dirname, "../../../data/catalog.json");
+  return resolve(__dirname, "../../../../data/catalog.json");
 }
 
 let catalog: AppCatalog | null = null;

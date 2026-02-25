@@ -117,10 +117,10 @@ const APPS: AppConfig[] = [
       },
       {
         label: "Compare travel apps",
-        text: "Compare Google Maps and Waze",
+        text: "Compare Google Maps and MAPS.ME",
         tool: "compare_apps",
-        args: { apps: ["Google Maps", "Waze"] },
-        response: "Here's a side-by-side comparison of Google Maps and Waze:",
+        args: { apps: ["Google Maps", "MAPS.ME: Offline Maps, GPS Nav"] },
+        response: "Here's a side-by-side comparison of Google Maps and MAPS.ME:",
       },
     ],
   },
