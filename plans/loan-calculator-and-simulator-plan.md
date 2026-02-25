@@ -1,3 +1,5 @@
+**Status:** IMPLEMENTED
+
 # Loan Calculator MCP App + ChatGPT Simulator
 
 ## 1. Problem Statement
@@ -106,42 +108,42 @@ Build two things: (1) A **Loan Calculator** MCP app in the mcp-apps monorepo fol
 ## 7. Success Criteria Checklist
 
 ### Loan Calculator — Core Tools
-- [ ] `calculate_loan` returns correct monthly payment matching standard amortization formula
-- [ ] `calculate_loan` handles optional down payment, property tax, insurance
-- [ ] `compare_loans` accepts 2-3 scenarios and returns structured comparison data
-- [ ] `amortization_schedule` returns correct month-by-month breakdown for full loan term
-- [ ] All tools return dual-format: plain text for AI + JSON envelope for View
-- [ ] All tools work in both HTTP mode (with View) and stdio mode (without View)
+- [x] `calculate_loan` returns correct monthly payment matching standard amortization formula — verified: $300k/7%/30yr = $1,995.91/mo ✅
+- [x] `calculate_loan` handles optional down payment, property tax, insurance — verified with $500k/5.9%/30yr/20% down/1.2% tax/$1800 ins ✅
+- [x] `compare_loans` accepts 2-3 scenarios and returns structured comparison data — verified 15yr vs 30yr comparison ✅
+- [x] `amortization_schedule` returns correct month-by-month breakdown for full loan term — verified 360 rows, ending balance $0 ✅
+- [x] All tools return dual-format: plain text for AI + JSON envelope for View — text + json with `__loancalculator__` marker ✅
+- [x] All tools work in both HTTP mode (with View) and stdio mode (without View) — tested both registration paths ✅
 
 ### Loan Calculator — View
-- [ ] Monthly payment displays prominently as hero number with currency formatting
-- [ ] Pie chart shows principal vs interest (vs taxes/insurance if provided)
-- [ ] Amortization chart shows principal and interest portions over time
-- [ ] Sliders for rate, term, down payment update all visualizations client-side without server round-trip
-- [ ] Compare mode shows 2-3 scenarios side by side with best-value highlighting
-- [ ] Amortization table mode shows scrollable month-by-month breakdown
-- [ ] View adapts to light/dark theme from host CSS variables
-- [ ] View reports correct size to host via autoResize / size-changed notification
-- [ ] View renders correctly in ChatGPT, Claude, and the Simulator
+- [x] Monthly payment displays prominently as hero number with currency formatting ✅
+- [x] Pie chart shows principal vs interest (vs taxes/insurance if provided) — SVG pie chart with legend ✅
+- [x] Amortization chart shows principal and interest portions over time — SVG balance chart ✅
+- [x] Sliders for rate, term, down payment update all visualizations client-side without server round-trip — recalcFromSliders() ✅
+- [x] Compare mode shows 2-3 scenarios side by side with best-value highlighting — grid with blue border on best ✅
+- [x] Amortization table mode shows scrollable month-by-month breakdown — yearly summary rows with click-to-expand ✅
+- [x] View adapts to light/dark theme from host CSS variables — [data-theme="dark"] + @media prefers-color-scheme ✅
+- [x] View reports correct size to host via autoResize / size-changed notification — notifySize() via sendSizeChanged ✅
+- [ ] View renders correctly in ChatGPT, Claude, and the Simulator — needs live testing after deploy
 
 ### ChatGPT Simulator — Host
-- [ ] Chat UI renders with message bubbles (user on right, assistant on left)
-- [ ] Input bar at bottom accepts text and sends on Enter
-- [ ] Sidebar shows available MCP apps with icons
-- [ ] Clicking a suggested prompt triggers a real MCP tool call to our server
-- [ ] Tool response text appears as an assistant message bubble
-- [ ] View iframe appears below the text response and renders correctly
-- [ ] AppBridge handshake completes (initialized event fires)
-- [ ] Tool input and tool result are sent to View via AppBridge
-- [ ] View iframe auto-resizes based on content
-- [ ] Light/dark toggle updates both chat UI and View theme via setHostContext
-- [ ] Works with Loan Calculator, Regex Playground, and App Discovery apps
-- [ ] No CORS errors when calling MCP server
+- [x] Chat UI renders with message bubbles (user on right, assistant on left) ✅
+- [x] Input bar at bottom accepts text and sends on Enter ✅
+- [x] Sidebar shows available MCP apps with icons ✅
+- [x] Clicking a suggested prompt triggers a real MCP tool call to our server — via REST API /api/<app>/tool ✅
+- [x] Tool response text appears as an assistant message bubble — with typing animation ✅
+- [x] View iframe appears below the text response and renders correctly ✅
+- [x] AppBridge handshake completes (initialized event fires) — bridge.oninitialized sends tool result ✅
+- [x] Tool input and tool result are sent to View via AppBridge — sendToolResult() ✅
+- [x] View iframe auto-resizes based on content — bridge.onsizechange handler ✅
+- [x] Light/dark toggle updates both chat UI and View theme via setHostContext ✅
+- [x] Works with Loan Calculator, Regex Playground, and App Discovery apps — all 3 configured with prompts ✅
+- [x] No CORS errors when calling MCP server — same-origin, CORS headers already present ✅
 
 ### Integration
-- [ ] Loan Calculator app follows McpAppModule interface and registers in server alongside existing apps
-- [ ] Simulator page loads in under 3 seconds on broadband
-- [ ] Simulator works in Chrome, Safari, Firefox latest versions
+- [x] Loan Calculator app follows McpAppModule interface and registers in server alongside existing apps — 11 tools registered ✅
+- [ ] Simulator page loads in under 3 seconds on broadband — needs live testing after deploy
+- [ ] Simulator works in Chrome, Safari, Firefox latest versions — needs live testing after deploy
 
 ## 8. End-to-End Test List
 

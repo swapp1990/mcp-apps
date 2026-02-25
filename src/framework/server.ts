@@ -281,6 +281,62 @@ export async function startHttpServer(config: ServerConfig): Promise<void> {
       return;
     }
 
+    // Simulator page
+    if (url === "/simulator" && req.method === "GET") {
+      const simulatorHtml = views["simulator"];
+      if (simulatorHtml) {
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.end(simulatorHtml);
+      } else {
+        res.writeHead(404);
+        res.end("Simulator not built");
+      }
+      return;
+    }
+
+    // REST API: POST /api/<app>/tool — call a tool directly
+    const apiMatch = url.match(/^\/api\/([^/]+)\/tool$/);
+    if (apiMatch && req.method === "POST") {
+      const appName = apiMatch[1];
+      const app = config.apps.find((a) => a.name === appName);
+      if (!app || !app.callTool) {
+        res.writeHead(404, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ error: `App not found: ${appName}` }));
+        return;
+      }
+
+      let body = "";
+      req.setEncoding("utf-8");
+      for await (const chunk of req) body += chunk;
+
+      try {
+        const { tool, arguments: args } = JSON.parse(body);
+        const result = await app.callTool(tool, args || {});
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify(result));
+      } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : "Unknown error";
+        res.writeHead(400, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ error: message }));
+      }
+      return;
+    }
+
+    // REST API: GET /api/<app>/view — get View HTML
+    const viewMatch = url.match(/^\/api\/([^/]+)\/view$/);
+    if (viewMatch && req.method === "GET") {
+      const appName = viewMatch[1];
+      const viewHtml = views[appName];
+      if (viewHtml) {
+        res.writeHead(200, { "Content-Type": "text/html" });
+        res.end(viewHtml);
+      } else {
+        res.writeHead(404);
+        res.end("View not found");
+      }
+      return;
+    }
+
     // Per-app MCP endpoints: /<appname>/mcp or /<appname>
     for (const [prefix, app] of appByPath) {
       const mcpPath = `${prefix}/mcp`;

@@ -142,6 +142,16 @@ const regexApp: McpAppModule = {
       },
     }, makeHandler(handleGenerateRegex));
   },
+
+  async callTool(name: string, args: Record<string, unknown>) {
+    switch (name) {
+      case "test_regex": return handleTestRegex(args as any);
+      case "explain_regex": return handleExplainRegex(args as any);
+      case "common_patterns": return handleCommonPatterns(args as any);
+      case "generate_regex": return handleGenerateRegex(args as any);
+      default: throw new Error(`Unknown tool: ${name}`);
+    }
+  },
 };
 
 export default regexApp;

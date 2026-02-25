@@ -89,6 +89,16 @@ const appdiscoveryApp: McpAppModule = {
       inputSchema: { app_name: z.string().describe("The name of the app to find alternatives for") },
     }, makeHandler(handleGetAlternatives));
   },
+
+  async callTool(name: string, args: Record<string, unknown>) {
+    switch (name) {
+      case "search_apps": return handleSearchApps(args as any);
+      case "get_app_details": return handleGetAppDetails(args as any);
+      case "compare_apps": return handleCompareApps(args as any);
+      case "get_alternatives": return handleGetAlternatives(args as any);
+      default: throw new Error(`Unknown tool: ${name}`);
+    }
+  },
 };
 
 // Pre-load catalog on import

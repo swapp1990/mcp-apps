@@ -24,4 +24,6 @@ export interface McpAppModule {
   resourceDescription: string;
   /** CSP resource domains needed by the View (optional) */
   cspResourceDomains?: string[];
+  /** Direct tool call for REST API (simulator) — optional */
+  callTool?(name: string, args: Record<string, unknown>): Promise<ToolResult>;
 }
