@@ -23,9 +23,9 @@ const DIST_DIR = path.join(ROOT, "dist", "views");
 const FIXTURES_DIR = path.join(ROOT, "screenshots", "fixtures");
 const OUTPUT_DIR = path.join(ROOT, "screenshots", "output");
 
-const VIEWPORT_WIDTH = 706;
-const MIN_HEIGHT = 400;
-const MAX_HEIGHT = 860;
+const VIEWPORT_WIDTH = 353;
+const MIN_HEIGHT = 200;
+const MAX_HEIGHT = 800;
 const DEVICE_SCALE = 2;
 
 // --- CLI arg parsing ---
